@@ -1,227 +1,585 @@
-* {
+/* ══════════════════════════════════════
+   RESET & BASE
+══════════════════════════════════════ */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: #fff;
     color: #222;
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    position: relative;
+    overflow-x: hidden;
 }
 
+a {
+    color: #222;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #4F149A;
+}
 
+/* ══════════════════════════════════════
+   HEADER
+══════════════════════════════════════ */
 .header {
-    width: 1920px;
-    height: 280.33px;
+    width: 100%;
     background-color: #EBE2FB;
+    padding: 80px 20px;
     text-align: center;
-
 }
 
-.MainHeading {
-    padding-top: 110px;
-    padding-bottom: 110px;
-    font-family: Poppins;
+.main-heading h1 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-style: Bold;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-
-
+    font-size: clamp(24px, 3vw, 40px);   /* scales with screen */
+    color: #222;
+    letter-spacing: 1px;
 }
 
-.container {
-    width: 1920px;
-    height: 11138.8798828125px;
-    opacity: 1;
-
+/* ══════════════════════════════════════
+   NAV BAR
+══════════════════════════════════════ */
+.nav-bar {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
 }
 
+.nav-bar img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* ══════════════════════════════════════
+   HERO / ANIMATED PART
+══════════════════════════════════════ */
 .animated-part {
-    width: 1920px;
-    height: 833px;
+    width: 100%;
+    height: 500px;                        /* was 833px — reduced for laptop */
     background-color: #6637C5;
-    opacity: 1;
-
 }
 
-.container-2 {
-    width: 1532.01953125px;
-    height: 640.9085083007812px;
-    gap: 10px;
-    opacity: 1;
-    padding-top: 70px;
-
+/* ══════════════════════════════════════
+   SERVICES SECTION
+══════════════════════════════════════ */
+.services-section {
+    width: 100%;
+    padding: 70px 20px;
 }
 
-.sub-container-2 {
-    width: 1532.01953125px;
-    height: 570.9085083007812px;
-    gap: 50px;
-    opacity: 1;
+.services-inner {
+    width: 100%;
+    max-width: 1532px;                    /* Figma value as max-width */
+    margin: 0 auto;
 }
 
-.heading-container-2 {
-    width: 1248.0433349609375px;
-    height: 60.90851593017578px;
-    gap: 50px;
-    opacity: 1;
+.services-heading {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.container-2-content {
-    width: 1532.01953125px;
-    height: 460px;
+.services-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 2.5vw, 32px);
+    color: #222;
+}
+
+.services-content {
     display: flex;
-    flex: row;
-    gap: 50px;
-    opacity: 1;
-    justify-items: center;
-    align-items: center;
-
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-.box1-container-2 {
-    width: 315px;
-    height: 460px;
-    gap: 20px;
-
-    opacity: 1;
-
+/* ── Sidebar ── */
+.services-sidebar {
+    width: 280px;
+    flex-shrink: 0;
 }
 
-.box2-container-2 {
-    width: 1167px;
-    height: 460px;
-    gap: 10px;
-    opacity: 1;
-    border-radius: 10px;
-    border-width: 1px;
-    padding: 30px;
-    
-}
-
-.box-list {
-    list-style-type: none;
+.sidebar-list {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    gap: 12px;
 }
 
-
-
-.box-list li {
-    width: 315px;
-    height: 60px;
-    gap: 20px;
-    border: 1px solid #f0f0f0;
-    opacity: 1;
-    margin-top: 15px;
-    padding-top: 11px;
-    padding-right: 20px;
-    padding-bottom: 11px;
-    padding-left: 20px;
+.sidebar-list li {
+    padding: 14px 20px;
     border-radius: 10px;
     background-color: #F2F2F2;
-
-    font-family: Poppins;
+    border: 1px solid #f0f0f0;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-style: Bold;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-
-
+    font-size: clamp(13px, 1.2vw, 17px);
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-#first {
+.sidebar-list li.active,
+.sidebar-list li:hover {
     background-color: #4F149A;
-    color: #f0f0f0;
+    color: #fff;
 }
 
-.box2-container-2a {
-    width: 1107px;
-    height: 392.805908203125px;
-    gap: 30px;
-    opacity: 1;
-
+/* ── Panel ── */
+.services-panel {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-.box2-container-2a h2 {
-    width: 1107px;
-    height: 48px;
-    opacity: 1;
-    font-family: Poppins;
-    font-weight: 700px;
-    font-style: Bold;
-    font-size: 32px;
+.panel-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 2vw, 30px);
     color: #4F149A;
-
-
-
+    margin-bottom: 14px;
 }
 
-.box2-container-2a-content {
-    width: 1107.0569141756052px;
-    height: 54.00000143455947px;
-    opacity: 1;
-    font-family: Poppins;
-
-    font-style: Regular;
-    font-size: 18px;
-
-
+.panel-desc {
+    font-size: clamp(13px, 1.1vw, 16px);
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 24px;
 }
 
-.box2-container-2a-links {
-    width: 1107px;
-    height: 230px;
+.panel-links {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-content: center;
-    opacity: 1;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.panel-links ul {
+    list-style: none;
+    flex: 1;
+    min-width: 160px;
+}
+
+.panel-links ul li {
+    padding: 10px 16px;
+    font-size: clamp(12px, 1vw, 15px);
     color: #222;
-
+    border-bottom: 1px solid #f5f5f5;
 }
 
-.first .box-list-1 li{
-    list-style-type: none;
-   padding : 20px 20px 20px 20px;
+.panel-links ul li a {
+    color: #222;
 }
 
-.second .box-list-1 li{
-   padding : 20px 20px 20px 20px;
-   list-style-type: none;
+.panel-links ul li a:hover {
+    color: #4F149A;
 }
 
-.third .box-list-1 li{
-    list-style-type: none;
-   
-   padding : 20px 20px 20px 20px;
-}
-
-.first .box-list-1 li a{
+/* ══════════════════════════════════════
+   EXPERIENCE SECTION
+══════════════════════════════════════ */
+.experience-section {
+    width: 100%;
+    padding: 70px 20px;
+    background: #fff;
     
-   color:#222;
 }
 
-.second .box-list-1 li a{
-    color:#222;
+.experience-inner {
+    width: 100%;
+    max-width: 1528px;                    /* Figma value as max-width */
+    margin: 0 auto;
+    gap:20px
 }
 
-.third .box-list-1 li a{
-     color:#222;
+.section-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(22px, 2.5vw, 38px);
+    text-align: center;
+    color: #222;
+    margin-bottom: 40px;
+    
+}
+
+
+/* ── Image Grid ── */
+.images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.images-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* ── Image Cards ── */
+.image-card {
+    height: 400px;                        /* was 475px — fits laptop better */
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 28px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-size 0.5s ease;
+}
+
+.image-card:hover {
+    background-size: 110%;
+}
+
+/* Dark gradient overlay */
+.image-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.70) 0%,
+        rgba(0, 0, 0, 0.25) 50%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+    transition: opacity 0.4s ease;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Fade overlay out on hover = image brightens */
+.image-card:hover .overlay {
+    opacity: 0;
+}
+
+/* Text sits above overlay */
+.card-text {
+    position: relative;
+    z-index: 2;
+}
+
+.card-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.card-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(12px, 1vw, 15px);
+    color: #fff;
+    line-height: 1.6;
+    max-width: 380px;
+}
+
+/* ── Individual card flex ratios & images ── */
+.image1 {
+    background-image: url(/images/image1.png);
+    flex: 1.4;                            /* wider card */
+}
+
+.image2 {
+    background-image: url(/images/image2.png);
+    flex: 1;                              /* narrower card */
+}
+
+.image3 {
+    background-image: url(/images/image3.png);
+    flex: 1;                              /* narrower card */
+}
+
+.image4 {
+    background-image: url(/images/image4.png);
+    flex: 1.4;                            /* wider card */
+}
+
+.image5{
+    background-image: url(/images/image5.png);
+    flex: 1; 
+}
+
+.image6{
+    background-image: url(/images/image6.png);
+    flex: 1; 
+}
+.image7{
+    background-image: url(/images/image7.png);
+    flex: 1; 
+}
+.image8{
+    background-image: url(/images/image8.jpg);
+    flex: 1; 
+}
+
+
+
+.success-inner {
+    width: 100%;
+    max-width: 1528px;                    /* Figma value as max-width */
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.Cards-Links{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 110px;
+    color: white;
+    transition: max-height 0.4s ease;
+
+
+}
+
+.Cards-Links a{
+    color:white;
+}
+.image-card:hover .Cards-Links{
+    max-height: 200px;
+
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ══════════════════════════════════════
+   RESPONSIVE — LAPTOP (max 1280px)
+══════════════════════════════════════ */
+@media (max-width: 1280px) {
+    .animated-part   { height: 400px; }
+    .image-card      { height: 340px; }
+    .services-sidebar { width: 230px; }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — TABLET (max 900px)
+══════════════════════════════════════ */
+@media (max-width: 900px) {
+    .services-content {
+        flex-direction: column;
+    }
+
+    .services-sidebar {
+        width: 100%;
+    }
+
+    .sidebar-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-list li {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .image-card  { height: 280px; padding: 18px; }
+    .animated-part { height: 300px; }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — MOBILE (max 600px)
+══════════════════════════════════════ */
+@media (max-width: 600px) {
+    .header { padding: 50px 16px; }
+    .animated-part { height: 220px; }
+
+    .images-row {
+        flex-direction: column;           /* stack cards vertically */
+    }
+
+    .image-card {
+        height: 240px;
+        flex: none;
+        width: 100%;
+    }
+
+    .sidebar-list li {
+        flex: 1 1 100%;
+    }
+
+    .panel-links {
+        flex-direction: column;
+    }
+}
