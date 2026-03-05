@@ -1,6 +1,4 @@
-/* ══════════════════════════════════════
-   RESET & BASE
-══════════════════════════════════════ */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -28,9 +26,14 @@ a:hover {
     color: #4F149A;
 }
 
-/* ══════════════════════════════════════
+
+.mobile-team-images{
+  display: none;
+}
+
+/* 
    HEADER
-══════════════════════════════════════ */
+*/
 .header {
     width: 100%;
     background-color: #EBE2FB;
@@ -41,14 +44,14 @@ a:hover {
 .main-heading h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: clamp(24px, 3vw, 40px);   /* scales with screen */
+    font-size: clamp(24px, 3vw, 40px);   
     color: #222;
     letter-spacing: 1px;
 }
 
-/* ═════════════════════════════
+/* 
    NAV BAR
-════════════════════════════════ */
+ */
 .nav-bar {
     width: 100%;
     background: #fff;
@@ -63,9 +66,9 @@ a:hover {
     margin: 0 auto;
 }
 
-/* ══════════════════════════════════════════════════
-   BANNER CSS — paste at bottom of your style.css
-══════════════════════════════════════════════════ */
+/* 
+   BANNER CSS 
+ */
 
 .animated-part {
   width: 100%;
@@ -109,10 +112,9 @@ a:hover {
   font-weight: 400;
 }
 
-/* ══════════════════════════════════════════════════
-   ARENA — where cards live and move
-   Takes remaining width, full height
-══════════════════════════════════════════════════ */
+/* 
+   ARENA 
+*/
 .ki-arena {
   flex: 1;
   height: 100%;
@@ -120,9 +122,9 @@ a:hover {
   overflow: hidden;
 }
 
-/* ══════════════════════════════════════════════════
+/* 
    CARDS — absolutely positioned, transition to new positions
-══════════════════════════════════════════════════ */
+ */
 .ki-card {
   position: absolute;
   border-radius: 0;          /* JS sets per-slot radius */
@@ -162,9 +164,9 @@ a:hover {
 .bg-light  { background: #9B72E8; }
 .bg-pale   { background: #C4AAF0; }
 
-/* ══════════════════════════════════════════════════
+/* 
    CONTENT STYLES
-══════════════════════════════════════════════════ */
+*/
 .kw {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -249,9 +251,9 @@ a:hover {
   display:flex; align-items:center; justify-content:center; margin-bottom:6px;
 }
 
-/* ══════════════════════════════════════════════════
+/* 
    RESPONSIVE
-══════════════════════════════════════════════════ */
+ */
 @media (max-width: 1100px) {
   .animated-part { padding-left: 40px; }
 }
@@ -277,9 +279,9 @@ a:hover {
 
 
 
-/* ══════════════════════════════════════
+/*
    SERVICES SECTION
-══════════════════════════════════════ */
+*/
 .services-section {
     width: 100%;
     padding: 70px 20px;
@@ -287,7 +289,7 @@ a:hover {
 
 .services-inner {
     width: 100%;
-    max-width: 1532px;                    /* Figma value as max-width */
+    max-width: 1532px;                    
     margin: 0 auto;
 }
 
@@ -393,9 +395,9 @@ a:hover {
     color: #4F149A;
 }
 
-/* ══════════════════════════════════════
+/*
    EXPERIENCE SECTION
-══════════════════════════════════════ */
+*/
 .experience-section {
     width: 100%;
     padding: 70px 20px;
@@ -405,7 +407,7 @@ a:hover {
 
 .experience-inner {
     width: 100%;
-    max-width: 1528px;                    /* Figma value as max-width */
+    max-width: 1528px;                    
     margin: 0 auto;
     gap:20px
 }
@@ -438,7 +440,7 @@ a:hover {
 
 /* ── Image Cards ── */
 .image-card {
-    height: 400px;                        /* was 475px — fits laptop better */
+    height: 400px;                        
     border-radius: 20px;
     overflow: hidden;
     padding: 28px;
@@ -502,22 +504,22 @@ a:hover {
 /* ── Individual card flex ratios & images ── */
 .image1 {
     background-image: url(/images/image1.webp);
-    flex: 1.4;                            /* wider card */
+    flex: 1.4;                            
 }
 
 .image2 {
     background-image: url(/images/image2.webp);
-    flex: 1;                              /* narrower card */
+    flex: 1;                              
 }
 
 .image3 {
     background-image: url(/images/image3.webp);
-    flex: 1;                              /* narrower card */
+    flex: 1;                              
 }
 
 .image4 {
     background-image: url(/images/image4.webp);
-    flex: 1.4;                            /* wider card */
+    flex: 1.4;                            
 }
 
 .image5{
@@ -534,7 +536,7 @@ a:hover {
     flex: 1; 
 }
 .image8{
-    background-image: url(/images/image8.webp);
+    background-image: url(/images/image8.jpg);
     flex: 1; 
 }
 
@@ -542,7 +544,7 @@ a:hover {
 
 .success-inner {
     width: 100%;
-    max-width: 1528px;                    /* Figma value as max-width */
+    max-width: 1528px;                  
     margin: 0 auto;
     margin-top: 30px;
     
@@ -756,10 +758,10 @@ text-align: center;
     line-height: 1.4;
 }
 
-/* ══════════════════════════════════════
+/* 
    STANDOUT BANNER
    Spans columns 2–4 (3 of 4 columns)
-══════════════════════════════════════ */
+ */
 .standout-banner {
     grid-column: 2 / 5;
     background: linear-gradient(135deg, #5B1FBF 0%, #7B35E0 100%);
@@ -827,18 +829,18 @@ text-align: center;
 
 
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — LAPTOP (max 1280px)
-══════════════════════════════════════ */
+*/
 @media (max-width: 1280px) {
     .animated-part   { height: 400px; }
     .image-card      { height: 340px; }
     .services-sidebar { width: 230px; }
 }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — TABLET (max 1024px)
-══════════════════════════════════════ */
+ */
 @media (max-width: 1024px) {
     .categrious-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -852,9 +854,9 @@ text-align: center;
     .standout-divider { display: none; }
 }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — TABLET (max 900px)
-══════════════════════════════════════ */
+*/
 @media (max-width: 900px) {
     .services-content {
         flex-direction: column;
@@ -877,9 +879,9 @@ text-align: center;
     .animated-part { height: 300px; }
 }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — MOBILE (max 700px)
-══════════════════════════════════════ */
+ */
 @media (max-width: 700px) {
     .categrious-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -897,9 +899,9 @@ text-align: center;
     }
 }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — MOBILE (max 600px)
-══════════════════════════════════════ */
+*/
 @media (max-width: 600px) {
     .header { padding: 50px 16px; }
     .animated-part { height: 220px; }
@@ -931,9 +933,9 @@ text-align: center;
     }
 }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE — MOBILE (max 420px)
-══════════════════════════════════════ */
+ */
 @media (max-width: 420px) {
     .categrious-grid {
         grid-template-columns: 1fr;
@@ -966,7 +968,7 @@ text-align: center;
     font-size: clamp(13px, 1.1vw, 16px);
     color: #555;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin: 0px auto;
     
 }
 
@@ -1027,9 +1029,9 @@ opacity: 1;
 }
 
 
-/* ══════════════════════════════════════
+/* 
    EFFICIENT SECTION
-══════════════════════════════════════ */
+*/
 .Efficient {
     width: 100%;
     background-color: #fff;
@@ -1074,9 +1076,7 @@ opacity: 1;
     width: 100%;
 }
 
-/* ── TOP badge cell:
-   Stack vertically: badge-with-tick on top, connector-line below
-   Cell pushes content to BOTTOM so connector touches track top ── */
+
 .badge-row.top .badge-cell {
     display: flex;
     flex-direction: column;
@@ -1085,9 +1085,6 @@ opacity: 1;
     min-height: 90px;
 }
 
-/* ── BOTTOM badge cell:
-   Stack vertically: connector-line on top, badge-with-tick below
-   Cell starts from TOP so connector touches track bottom ── */
 .badge-row.bottom .badge-cell {
     display: flex;
     flex-direction: column;
@@ -1136,12 +1133,6 @@ opacity: 1;
     white-space: nowrap;
 }
 
-/* ── Connector line ── 
-   Sits BETWEEN badge-with-tick and the chevron track.
-   margin-left aligns it under center of badge pill.
-   tick=34px + gap=10px = 44px offset, then badge starts.
-   Center of badge area ~ 44px + some padding = ~60px
-   We align under the LEFT side of the badge text pill ── */
 .connector-line {
     width: 2px;
     height: 28px;
@@ -1218,9 +1209,9 @@ opacity: 1;
     z-index: 2;
 }
 
-/* ══════════════════════════════════════
+/*
    RESPONSIVE
-══════════════════════════════════════ */
+ */
 @media (max-width: 1100px) {
     .badge-text {
         font-size: 10px;
@@ -1283,8 +1274,8 @@ margin-bottom: 70px;
 .social-img-collection{
     width:100%;
     max-width: 912px;
-    margin-inline-start: 130px;
     margin-top: 90px;
+    margin-inline-start: 90px;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -1386,9 +1377,8 @@ left: 90px;
 }
 
 .Team-images{
-    padding: 20px;
-   
-    max-width: 1528px;
+padding: 20px;
+max-width: 1528px;
 height: 455px;
 display: flex;
 justify-content: center;
@@ -1401,51 +1391,45 @@ align-items: stretch;
 gap:20px;
 }
 
-
-
-
 .col-small{
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-    flex:1;
- 
-
+display: flex;
+flex-direction: column;
+gap:15px;
+flex:1;
 opacity: 1;
 border-radius: 20px;
 
 }
 
 .col-large{
-    flex:2;
-
+flex:2;
 opacity: 1;
 border-radius: 20px;
 
 }
 
 .Team-images img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+width: 100%;
+object-fit: cover;
+border-radius: 10px;
 }
 
 .main-image-wrapper{
-    position: relative;
+position: relative;
 }
 
 
 .job-link{
-      color: #4f149a;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background-color: white;
-    border-radius: 8px;
+color: #4f149a;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+background-color: white;
+border-radius: 8px;
 
-    max-width: 346.0769348144531px;
+max-width: 346.0769348144531px;
 height: 54.80397033691406px;
 gap: 9.68px;
 
@@ -1502,9 +1486,9 @@ z-index:3;
 }
 
 .footer{
-    background-color:  #4F149A;
-    color:white;
-    text-align: center;
+background-color:  #4F149A;
+color:white;
+text-align: center;
 }
 .Discuss , .footer-code{
 font-family: Poppins;
@@ -1534,74 +1518,6 @@ padding: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ══════════════════════════════════════════════════════════════
-   MOBILE RESPONSIVE CSS
-   Add this at the very END of your style.css
-   Do NOT change any existing CSS — only add these rules below
-══════════════════════════════════════════════════════════════ */
 
 /* ── Mobile process accordion — hidden on desktop, shown on mobile ── */
 .mobile-process {
@@ -1646,6 +1562,7 @@ padding: 20px;
   flex-shrink: 0;
   z-index: 3;
   position: relative;
+  top:50px;
 }
 
 .mp-check svg {
@@ -1691,9 +1608,7 @@ padding: 20px;
 }
 
 
-/* ════════════════════════════════════
-   TABLET — max 768px
-════════════════════════════════════ */
+
 @media (max-width: 768px) {
 
   /* ── Global h2 override ── */
@@ -2035,7 +1950,7 @@ padding: 20px;
     margin-top: 24px;
     padding: 16px;
     gap: 12px !important;
-  }
+  }        
 
   .col-small,
   .col-large {
@@ -2070,7 +1985,8 @@ padding: 20px;
   }
 
   /* ── FAQ section ── */
-  .FAQ-container {
+.FAQ-container {
+  display: none;
     height: auto !important;
     padding: 40px 16px;
   }
@@ -2105,9 +2021,7 @@ padding: 20px;
 }
 
 
-/* ════════════════════════════════════
-   MOBILE — max 480px
-════════════════════════════════════ */
+
 @media (max-width: 480px) {
 
   /* ── Banner ── */
@@ -2179,9 +2093,6 @@ padding: 20px;
 }
 
 
-/* ════════════════════════════════════
-   MOBILE — max 360px (very small)
-════════════════════════════════════ */
 @media (max-width: 360px) {
 
   .ki-banner-h1 {
@@ -2213,3 +2124,788 @@ padding: 20px;
     font-size: 12px !important;
   }
 }
+
+
+
+.mobile-heading {
+    display: none;
+}
+
+.desktop-heading {
+    display: block;
+}
+
+
+
+.sidebar-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    gap: 8px;
+}
+
+/* Arrow — hidden on desktop, shown on mobile */
+.sidebar-arrow {
+    display: none;
+    font-size: 11px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: inherit;
+}
+
+/* Rotated when open */
+.sidebar-item.open .sidebar-arrow {
+    transform: rotate(180deg);
+}
+
+
+
+.sidebar-sub-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ── Heading swap ── */
+    .desktop-heading {
+        display: none !important;
+    }
+
+    .mobile-heading {
+        display: block !important;
+    }
+
+    .mobile-heading h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: clamp(20px, 5vw, 28px);
+        color: #222;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    /* ── Hide services panel on mobile ── */
+    .services-panel {
+        display: none !important;
+    }
+
+    /* ── Sidebar full width on mobile ── */
+    .services-sidebar {
+        width: 100% !important;
+    }
+
+    /* ── Stack sidebar items vertically ── */
+    .sidebar-list {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+
+    /* ── Each li: block, no extra padding, rounded ── */
+    .sidebar-list li.sidebar-item {
+        flex: none !important;
+        padding: 0 !important;
+        border-radius: 10px !important;
+        overflow: hidden !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    /* ── Show arrow on mobile ── */
+    .sidebar-arrow {
+        display: inline-block;
+    }
+
+    /* ── Header: default (closed) state ── */
+    .sidebar-item .sidebar-item-header {
+        padding: 14px 18px;
+        background-color: #F2F2F2;
+        color: #222;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        transition: "background" 0.2s, color 0.2s, border-radius 0.2s;
+    }
+
+    /* ── Header: active or open state ── */
+    .sidebar-item.active .sidebar-item-header,
+    .sidebar-item.open .sidebar-item-header {
+        background-color: #4F149A !important;
+        color: #fff !important;
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    /* ── Sub-menu: shown as block when open ── */
+    .sidebar-item.open .sidebar-sub-menu {
+        display: block !important;
+        background: #fff;
+        border: 1px solid #e0d6f7;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+        /* Smooth reveal using animation */
+        animation: subMenuOpen 0.3s ease forwards;
+    }
+
+    @keyframes subMenuOpen {
+        from {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* ── Sub-menu items ── */
+    .sidebar-sub-menu li {
+        border: none !important;
+        background: none !important;
+        padding: 0 !important;
+        font-weight: 400 !important;
+        border-radius: 0 !important;
+    }
+
+    .sidebar-sub-menu li a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: #333;
+        border-bottom: 1px solid #f3eeff;
+       /* text-decoration: none; */
+        transition: "background" 0.15s, color 0.15s, padding-left 0.15s;
+    }
+
+    /* Arrow bullet before each link */
+    .sidebar-sub-menu li a::before {
+        content: '›';
+        font-size: 16px;
+        color: #9B6FD8;
+        flex-shrink: 0;
+        line-height: 1;
+    }
+
+    .sidebar-sub-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .sidebar-sub-menu li a:hover {
+        background-color: #f5f0ff;
+        color: #4F149A;
+        padding-left: 24px;
+    }
+
+    .sidebar-sub-menu li a:hover::before {
+        color: #4F149A;
+    }
+
+}
+/* ── END MOBILE ── */
+
+
+@media (max-width: 768px) {
+
+    /* ── Make the outer container scrollable horizontally ── */
+    .experience-section .images-container,
+    .success-inner .images-container {
+        display: flex;
+        flex-direction: row !important;
+        overflow-x: auto;
+        overflow-y: visible;
+        gap: 14px !important;
+        padding-bottom: 16px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Hide scrollbar but keep scrollable */
+        scrollbar-width: none;
+    }
+
+    .experience-section .images-container::-webkit-scrollbar,
+    .success-inner .images-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* ── Each row becomes an individual card (not a row of cards) ── */
+    .experience-section .images-row,
+    .success-inner .images-row {
+        display: contents; 
+    }
+
+    /* ── Each card: fixed width, never shrinks ── */
+    .experience-section .image-card,
+    .success-inner .image-card {
+        flex: 0 0 75vw !important;      
+        width: 75vw !important;
+        height: 300px !important;
+        scroll-snap-align: start;
+        border-radius: 16px !important;
+    }
+
+    /* ── Cards-Links stays usable on mobile cards ── */
+    .experience-section .Cards-Links,
+    .success-inner .Cards-Links {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .experience-section .image-card,
+    .success-inner .image-card {
+        flex: 0 0 82vw !important;
+        width: 82vw !important;
+        height: 270px !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ── Always show links on mobile (no hover needed) ── */
+    .experience-section .image-card .Cards-Links,
+    .success-inner .image-card .Cards-Links {
+        max-height: 300px !important;
+        overflow: visible !important;
+        margin-top: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+    }
+
+    /* ── Card text layout: heading + desc + links stacked ── */
+    .experience-section .image-card .card-text,
+    .success-inner .image-card .card-text {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    /* ── Stronger dark overlay so text is readable ── */
+    .experience-section .image-card .overlay,
+    .success-inner .image-card .overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.70) 60%,
+            rgba(0, 0, 0, 0.65) 100%
+        ) !important;
+        opacity: 1 !important;
+    }
+
+    /* Keep overlay visible even on hover/touch on mobile */
+    .experience-section .image-card:hover .overlay,
+    .success-inner .image-card:hover .overlay {
+        opacity: 1 !important;
+    }
+
+    /* ── Card heading ── */
+    .experience-section .image-card .card-heading,
+    .success-inner .image-card .card-heading {
+        font-size: 13px !important;
+        margin-bottom: 6px !important;
+        color: #fff !important;
+    }
+
+    /* ── Card description — hide on mobile to give links space ── */
+    .experience-section .image-card .card-text > p,
+    .success-inner .image-card .card-text > p {
+        display: none !important;
+    }
+
+    /* ── Each link ── */
+    .experience-section .image-card .Cards-Links a,
+    .success-inner .image-card .Cards-Links a {
+        color: #fff !important;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+        padding: 5px 10px !important;
+       /* background: rgba(255, 255, 255, 0.15) !important;*/
+        border-radius: 6px !important;
+       /* backdrop-filter: blur(4px) !important;*/
+        transition: "background" 0.2s !important;
+        display: block !important;
+        line-height: 1.4 !important;
+    }
+
+    .experience-section .image-card .Cards-Links a:hover,
+    .success-inner .image-card .Cards-Links a:hover {
+        background: rgba(255, 255, 255, 0.28) !important;
+        color: #fff !important;
+    }
+
+    /* ── Taller cards to fit all links ── */
+    .experience-section .image-card,
+    .success-inner .image-card {
+        height: 320px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-section .image-card,
+    .success-inner .image-card {
+        height: 300px !important;
+    }
+}
+
+
+
+/* ── Desktop: show original, hide mobile version ── */
+.standout-banner {
+    display: flex; /* already flex — keep visible on desktop */
+}
+
+.mobile-standout-banner {
+    display: none; /* hidden on desktop */
+}
+
+/* ── Mobile: hide original, show mobile version ── */
+@media (max-width: 768px) {
+
+    /* Hide the original standout banner (inside the grid) */
+    .categrious-grid > .standout-banner {
+        display: none !important;
+    }
+
+    /* Show the mobile standout banner */
+    .mobile-standout-banner {
+        display: block !important;
+        margin: 10px 0;
+    }
+
+    /* Style the banner inside .mobile-standout-banner */
+    .mobile-standout-banner .standout-banner {
+        display: flex !important;
+        grid-column: unset !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px 20px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #5B1FBF 0%, #7B35E0 100%);
+        box-shadow: 0 8px 30px rgba(91, 31, 191, 0.35);
+    }
+
+    .mobile-standout-banner .standout-divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .mobile-standout-banner .standout-items {
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .mobile-standout-banner .standout-items p {
+        font-size: 13px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.85);
+        margin: 0;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    /* ── Container ── */
+    .Team-container {
+        height: auto !important;
+        padding: 32px 16px 40px 16px !important;
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .Team-head {
+        height: auto !important;
+    }
+
+    .Team-head h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+        color: #111 !important;
+        margin-bottom: 14px !important;
+    }
+
+    /* ── Description paragraph ── */
+    .Team-text {
+        height: auto !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0 !important;
+    }
+
+    .Team-text p {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+        color: #444 !important;
+        text-align: left !important;
+    }
+
+    /* ── Images block ── */
+    .Team-images {
+        display: none;
+       
+    }
+
+.mobile-team-images{
+display: block;
+padding: 20px;
+max-width: 1528px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+opacity: 1;
+position : relative;
+background-color: #EBE2FB;
+align-items: stretch;
+    }
+
+   .mobile-team-images   .job-link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    width: 100% !important;
+    max-width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+    position: static !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* ── Desktop: hide show-more card and mobile banner ── */
+.show-more-card  { display: none; }
+.mobile-standout-banner { display: none; }
+
+@media (max-width: 768px) {
+
+    /* ── 2 cards per row always ── */
+    .categrious-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    /* ── Card: image on top, title below ── */
+    .categrious-card {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 12px !important;
+        gap: 8px !important;
+        border-radius: 16px !important;
+        min-height: 170px !important;
+    }
+
+    .card-img {
+        width: 100% !important;
+        height: 115px !important;
+        border-radius: 10px !important;
+        object-fit: cover !important;
+    }
+
+    .Card-Tittle {
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        color: #1a1a1a !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+    }
+
+    .categrious-card--purple .Card-Tittle {
+        color: #4F149A !important;
+    }
+
+    /* ── Desktop standout banner: hidden on mobile ── */
+    .categrious-grid > .standout-banner {
+        display: none !important;
+    }
+
+    /* ── Cards hidden by JS ── */
+    .categrious-card.hidden-mobile {
+        display: none !important;
+    }
+
+   
+    .show-more-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #EBE2FB !important;        
+        border-radius: 16px !important;
+        min-height: 170px !important;          
+        cursor: pointer !important;
+        border: none !important;
+        padding: 12px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.07) !important;
+        transition: "background" 0.2s !important;
+        grid-column: span 1 !important;     
+    }
+
+    .show-more-card:active {
+        background: #ddd0f7 !important;
+    }
+
+    .show-more-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        height: 100% !important;
+    }
+
+  
+
+    .show-more-label {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        color: #4F149A !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+    }
+
+    /* ── MOBILE STANDOUT BANNER
+        
+    ── */
+    .mobile-standout-banner {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 12px !important;
+    }
+
+    .mobile-standout-banner .standout-banner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 18px !important;
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        background: linear-gradient(135deg, #5B1FBF 0%, #7B35E0 100%) !important;
+        box-shadow: 0 8px 30px rgba(91,31,191,0.35) !important;
+        grid-column: unset !important;
+        width: 100% !important;
+    }
+
+    .mobile-standout-banner .standout-heading h2 {
+        font-size: 20px !important;
+        color: #fff !important;
+        white-space: normal !important;
+        padding-right: 0 !important;
+    }
+
+    .mobile-standout-banner .standout-divider {
+        width: 100% !important;
+        height: 1px !important;
+        background: rgba(255,255,255,0.3) !important;
+    }
+
+    .mobile-standout-banner .standout-items {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .mobile-standout-banner .standout-icon {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        background: rgba(255,255,255,0.15) !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 7px !important;
+    }
+
+    .mobile-standout-banner .standout-items strong {
+        display: block !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .mobile-standout-banner .standout-items p {
+        color: rgba(255,255,255,0.85) !important;
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .social-content {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 0 16px 30px 16px !important;
+        margin-top: 30px !important;
+        margin-bottom: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* ── Heading: order 1 — top ── */
+    .social-content h2 {
+        order: 1 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* ── Text paragraph + link: order 2 — below heading ── */
+    .social-text {
+        order: 2 !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin-bottom: 24px !important;
+    }
+
+    .social-text p {
+        position: static !important;
+        font-size: 13px !important;
+        text-align: center !important;
+        line-height: 1.6 !important;
+    }
+
+    .social-text h4 {
+        position: static !important;
+        margin-top: 12px !important;
+        text-align: center !important;
+        color: #4F149A !important;
+    }
+
+    /* ── Images: order 3 — bottom ── */
+    .social-img-collection {
+        order: 3 !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+       
+        margin-inline-start: 0 !important;
+        margin-top: 0 !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .socialimg {
+        width: calc(33.33% - 10px) !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+        margin-left: -15px;
+        flex-shrink: 0;
+    }
+
+    .socialimg img {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+}
+
+
+
+/* ══════════════════════════════════════════════════════════
+   BANNER — MOBILE: ki-arena on top, text below
+   Paste at the very END of your style.css.
+   Desktop completely unchanged.
+══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+
+    .animated-part {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        align-items: stretch !important;
+    }
+
+    /* ── Arena on TOP ── */
+    .ki-arena {
+        order: 1 !important;
+        width: 100% !important;
+        height: 280px !important;
+        flex: none !important;
+    }
+
+    /* ── Text BELOW arena ── */
+    .ki-banner-text {
+        order: 2 !important;
+        width: 100% !important;
+        flex: none !important;
+        padding: 24px 20px 32px 20px !important;
+        background-color: #6637C5 !important;
+    }
+
+    .ki-banner-h1 {
+        font-size: 26px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .ki-banner-sub {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ki-arena {
+        height: 240px !important;
+    }
+
+    .ki-banner-h1 {
+        font-size: 22px !important;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,21 +1,3 @@
-/* ══════════════════════════════════════════════════
-   BANNER JS — paste just before </body>
-
-   Cards are absolutely positioned inside the arena.
-   On each interval, cards physically slide/move to
-   new grid slot positions using CSS transitions on
-   top/left/width/height.
-
-   Layout: staircase
-     Row 1 (top):    4 cards  — slots 0,1,2,3
-     Row 2 (middle): 3 cards  — slots 4,5,6
-     Row 3 (bottom): 2 cards  — slots 7,8
-   = 9 slots total
-
-   Cards pool has more items than slots.
-   Every 2.5s: shuffle which cards occupy which slots
-   — cards smoothly slide to new positions.
-══════════════════════════════════════════════════ */
 
 (function () {
   'use strict';
@@ -116,18 +98,7 @@
     },
   ];
 
-  /* ── SLOT LAYOUT ───────────────────────────────────────────────
-     9 slots in staircase pattern.
-     Computed as % of arena so it works at any size.
 
-     Arena is divided into 4 equal columns, 3 equal rows.
-     GAP between tiles = 0 (no gap, touching each other).
-
-     Slot positions expressed as column/row indices (0-based):
-       Row 0: cols 0,1,2,3   → slots 0,1,2,3
-       Row 1: cols 1,2,3     → slots 4,5,6
-       Row 2: cols 2,3       → slots 7,8
-  ─────────────────────────────────────────────────────────────── */
   const COLS = 4;
   const ROWS = 3;
   const GAP  = 0; // no gap — blocks touch each other
@@ -162,10 +133,6 @@
     };
   }
 
-  /* ── DOM CARD ELEMENTS ─────────────────────────────────────────
-     Create one DOM element per card in the pool (all 16 cards).
-     Cards not currently shown are hidden off-screen (opacity 0).
-  ─────────────────────────────────────────────────────────────── */
   const arena = document.getElementById('kiArena');
   const cardEls = {}; // id → DOM element
 
@@ -181,9 +148,7 @@
     cardEls[card.id] = el;
   });
 
-  /* ── CURRENT SLOT ASSIGNMENT ───────────────────────────────────
-     slotCards[slotIndex] = card id currently in that slot (or null)
-  ─────────────────────────────────────────────────────────────── */
+  
   let slotCards = [
     'cr-aspnet',     // slot 0
     'transform',     // slot 1
@@ -201,14 +166,7 @@
     .map(c => c.id)
     .filter(id => !slotCards.includes(id));
 
-  /* ── PLACE ALL VISIBLE CARDS ───────────────────────────────────
-     Set position of each card that's in a slot.
-     Border radius rules (staircase shape):
-       - Left-most card of each row → bottom-left: 14px (inner curve)
-       - Top row cards              → top corners: 0 (flush to banner top)
-       - Bottom row cards           → bottom corners: 0 (flush to banner bottom)
-       - Right edge cards bleed off → no right radius needed
-  ─────────────────────────────────────────────────────────────── */
+ 
 
   // Which slot index is the LEFT-MOST in each row
   const ROW_FIRST = [0, 4, 7]; // slot 0 = row0 left, slot 4 = row1 left, slot 7 = row2 left
@@ -227,8 +185,7 @@
     const br = isBot ? 0 : (isLeft ? 0 : 14);  // left card bottom-right stays 0 too (inner edge)
     const bl = isBot ? 0 : (isLeft ? 14 : 14); // LEFT card gets the staircase curve here
 
-    // Special: left card of row1 and row2 — bottom-left is the staircase inner corner
-    // top-left should also be 0 because it sits flush against the row above
+    
     const finalTl = isLeft && !isTop ? 0 : tl;
 
     return `${finalTl}px ${tr}px ${br}px ${bl}px`;
@@ -284,10 +241,7 @@
 
   initialPlace();
 
-  /* ── SHUFFLE — move cards to new slots ─────────────────────────
-     Pick 3 random slots, rotate their cards around.
-     Also 30% chance: swap one visible card with a bench card.
-  ─────────────────────────────────────────────────────────────── */
+ 
   function doShuffle() {
     const numSlots = SLOT_DEFS.length; // 9
 
@@ -344,7 +298,6 @@
 
   setInterval(doShuffle, 2600);
 
-  /* ── Reposition on resize ─────────────────────────────────────── */
   window.addEventListener('resize', function () {
     slotCards.forEach(function (cardId, slotIdx) {
       placeCard(cardId, slotIdx, false);
@@ -359,3 +312,139 @@
 
 
 })();
+
+
+
+
+
+(function () {
+    'use strict';
+
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    var items = document.querySelectorAll('.sidebar-list .sidebar-item');
+
+    if (!items.length) return;
+
+    items.forEach(function (item) {
+        var header = item.querySelector('.sidebar-item-header');
+        if (!header) return;
+
+        header.addEventListener('click', function (e) {
+
+            /* ── Desktop: do nothing, let existing panel JS work ── */
+            if (!isMobile()) return;
+
+            /* Prevent link clicks inside header from triggering toggle */
+            if (e.target.tagName === 'A') return;
+
+            var isOpen = item.classList.contains('open');
+
+            /* Close all items */
+            items.forEach(function (other) {
+                other.classList.remove('open', 'active');
+            });
+
+            /* If it was closed, open it now */
+            if (!isOpen) {
+                item.classList.add('open', 'active');
+            }
+        });
+    });
+
+    /* Re-evaluate on resize (e.g. rotating device) */
+    window.addEventListener('resize', function () {
+        if (!isMobile()) {
+            /* On desktop resize: clear all open states so desktop is clean */
+            items.forEach(function (item) {
+                item.classList.remove('open');
+            });
+        }
+    });
+
+})();
+
+
+
+
+(function () {
+
+    function initShowMore() {
+
+        if (!window.matchMedia('(max-width: 768px)').matches) return;
+
+        var grid = document.querySelector('.categrious-grid');
+        var showMoreCard = document.getElementById('showMoreCard');
+        if (!grid || !showMoreCard) return;
+
+        var allCards = Array.from(grid.querySelectorAll('.categrious-card'));
+        var SHOW_COUNT = 7;
+
+        // Hide cards after Finance on load
+        allCards.forEach(function (card, i) {
+            if (i >= SHOW_COUNT) card.classList.add('hidden-mobile');
+        });
+
+        // Move mobile-standout-banner outside grid after .categrious-section
+        var mobileBanner = document.querySelector('.mobile-standout-banner');
+        var catSection   = document.querySelector('.categrious-section');
+        if (mobileBanner && catSection && catSection.parentNode) {
+            catSection.parentNode.insertBefore(mobileBanner, catSection.nextSibling);
+        }
+
+        var isExpanded = false;
+
+        showMoreCard.addEventListener('click', function () {
+            isExpanded = !isExpanded;
+
+            var label = showMoreCard.querySelector('.show-more-label');
+           
+
+            if (isExpanded) {
+
+                // 1. First reveal all hidden cards
+                allCards.forEach(function (card) {
+                    card.classList.remove('hidden-mobile');
+                });
+
+                // 2. After revealing, move show-more card to the very end
+                //    setTimeout ensures DOM has updated before we append
+                setTimeout(function () {
+                    grid.appendChild(showMoreCard);
+                }, 0);
+
+                label.textContent = 'Show less';
+                
+
+            } else {
+
+                // 1. Hide cards after Finance
+                allCards.forEach(function (card, i) {
+                    if (i >= SHOW_COUNT) card.classList.add('hidden-mobile');
+                });
+
+                // 2. Move show-more card back next to Finance
+                setTimeout(function () {
+                    var refCard = allCards[SHOW_COUNT];
+                    grid.insertBefore(showMoreCard, refCard);
+                }, 0);
+
+                label.textContent = 'Show more';
+               
+
+                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initShowMore);
+    } else {
+        initShowMore();
+    }
+
+})();
+
+
