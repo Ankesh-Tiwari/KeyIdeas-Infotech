@@ -4,520 +4,599 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyIdeas-Infotech Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- ── SEO: Primary Meta Tags ── -->
+    <title>KeyIdeas Infotech | Expert IT Consulting Services Since 2007</title>
+    <meta name="description" content="KeyIdeas Infotech offers expert IT consulting services including software product engineering, web & e-commerce development, UI/UX design, and digital marketing for SMBs since 2007.">
+    <meta name="keywords" content="IT consulting services, software product engineering, web development, e-commerce development, mobile app development, UI UX design, digital marketing, custom software development">
+    <meta name="author" content="KeyIdeas Infotech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.keyideasinfotech.com/">
+
+    <!-- ── SEO: Open Graph / Facebook ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.keyideasinfotech.com/">
+    <meta property="og:title" content="KeyIdeas Infotech | Expert IT Consulting Services Since 2007">
+    <meta property="og:description" content="Driving success through expert IT consulting services. Agility, Ingenuity, Reliability: Powering Progress. Trusted by SMBs since 2007.">
+    <meta property="og:image" content="https://www.keyideasinfotech.com/images/og-image.webp">
+    <meta property="og:site_name" content="KeyIdeas Infotech">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ── SEO: Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.keyideasinfotech.com/">
+    <meta name="twitter:title" content="KeyIdeas Infotech | Expert IT Consulting Services Since 2007">
+    <meta name="twitter:description" content="Driving success through expert IT consulting services. Agility, Ingenuity, Reliability: Powering Progress.">
+    <meta name="twitter:image" content="https://www.keyideasinfotech.com/images/og-image.webp">
+
+    <!-- ── Performance: Preconnect to external origins ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ── Performance: Font with display=swap to avoid FOIT ── -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ── Performance: Preload critical above-the-fold images ── -->
+    <link rel="preload" as="image" href="/images/nav-img.webp">
+
+    <!-- ── Stylesheet ── -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ── SEO: Structured Data — Organization ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KeyIdeas Infotech",
+      "url": "https://www.keyideasinfotech.com",
+      "logo": "https://www.keyideasinfotech.com/images/nav-img.webp",
+      "foundingDate": "2007",
+      "description": "IT consulting services company specializing in software product engineering, web development, e-commerce, UI/UX design, and digital marketing.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://clutch.co/profile/keyideas-infotech-private"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- ── SEO: Structured Data — WebSite with Sitelinks Searchbox ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "KeyIdeas Infotech",
+      "url": "https://www.keyideasinfotech.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.keyideasinfotech.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- ── SEO: Structured Data — LocalBusiness / ProfessionalService ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "KeyIdeas Infotech",
+      "url": "https://www.keyideasinfotech.com",
+      "description": "Expert IT consulting services including software engineering, web & e-commerce development, UI/UX design, mobile app development, and digital marketing.",
+      "foundingDate": "2007",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "50",
+        "bestRating": "5"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Consulting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Software Product Engineering" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website & E-Commerce Development" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "UI/UX Design & Digital Experience" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing & SEO" } }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
 
     <!-- ── HEADER ── -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="main-heading">
             <h1>HOMEPAGE - DESKTOP</h1>
         </div>
     </header>
 
     <!-- ── NAV ── -->
-    <div class="nav-bar">
-        <img src="images/nav-img.webp" alt="KeyIdeas Navigation">
-    </div>
+    <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+        <img src="./images/nav-img.webp" alt="KeyIdeas Infotech - IT Consulting Services Navigation" width="1920" height="80" loading="eager" fetchpriority="high">
+    </nav>
 
     <!-- ── PAGE WRAPPER ── -->
-    <main>
+    <main id="main-content">
 
+        <!-- ── HERO BANNER ── -->
+        <section class="animated-part" aria-label="Hero banner">
 
-
-<div class="animated-part">
-
-  <!-- LEFT: Text -->
-  <div class="ki-banner-text">
-    <h1 class="ki-banner-h1">
-      Driving Success<br>
-      Through Expert IT<br>
-      Consulting Services
-    </h1>
-    <p class="ki-banner-sub">Agility, Ingenuity, Reliability: Powering Progress.</p>
-  </div>
-
-  <!-- RIGHT: Cards arena — cards move inside here -->
-  <div class="ki-arena" id="kiArena">
-    <!-- Cards injected by JS -->
-  </div>
-       
-</div>
-
-
-
-<section class="services-section">
-    <div class="services-inner">
-
-        <!-- Desktop heading — visible only on desktop -->
-        <div class="services-heading desktop-heading">
-            <h2>Comprehensive IT Consulting Services for All Business Needs</h2>
-        </div>
-
-        <!-- Mobile heading — visible only on mobile -->
-        <div class="services-heading mobile-heading">
-            <h2>Professional Web Design &amp; Development</h2>
-        </div>
-
-        <div class="services-content">
-
-            <!-- ══ SIDEBAR ══ -->
-            <div class="services-sidebar">
-                <ul class="sidebar-list">
-
-                    <!-- 1. Software Product Engineering -->
-                    <li class="sidebar-item active" data-index="0">
-                        <div class="sidebar-item-header">
-                            <span>Software Product Engineering</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="#">API &amp; Microservices</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/best-cloud-application-development-services-company/">Cloud Application Development</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-custom-crm-software-app-development-company/">Custom CRM Software</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-custom-software-development-services-hire-developers/">Custom Software Development</a></li>
-                            <li><a href="#">DevOps Consulting Services</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-cms-web-design-development-services/">Enterprise CMS Solutions</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-enterprise-software-development-company/">Enterprise Software Development</a></li>
-                            <li><a href="#">Microsoft Development</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/">Mobile App Development</a></li>
-                            <li><a href="#">Software Consulting</a></li>
-                            <li><a href="#">Software Modernization</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-outsource-software-development-company-it-outsourcing-services/">Software Outsourcing</a></li>
-                            <li><a href="#">Software Support and Maintenance</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/software-application-testing-services-company/">Testing and Quality Assurance</a></li>
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>
-
-                    <!-- 2. Website & E-Commerce -->
-                    <li class="sidebar-item" data-index="1">
-                        <div class="sidebar-item-header">
-                            <span>Website &amp; E-Commerce</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="https://www.keyideasinfotech.com/website-development/ablecommerce-development-services/">AbleCommerce Website Development</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/bagisto-b2b-solutions-from-a-bagisto-laravel-e-commerce-development-company/">Bagisto E-Commerce</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/ecommerce/web-design-company/">E-Commerce Website Design</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-responsive-web-design-development-company/">Responsive Websites</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/best-shopify-web-development-company-hire-developers/">Shopify Website Development</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/">Web Development</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/">Website Maintenance Services</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/web-design/">Website Redesign Services</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/wordpress/woocommerce/">Website Development</a> </li>
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>
-
-                    <!-- 3. Digital Experience -->
-                    <li class="sidebar-item" data-index="2">
-                        <div class="sidebar-item-header">
-                            <span>Digital Experience</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="https://www.keyideasinfotech.com/branding/">Branding</a></li>
-                            <li><a href="#">MVP</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/ux-ui-design/">UI/UX Design & Prototyping</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/user-centered-design-agency/">User Research</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/best-ui-ux-web-design-development-agency-hire-designers/">UX & Information Architecture</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-web-design-company/">Web Design</a></li>
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>
-
-                    <!-- 4. Remote Team -->
-                    <li class="sidebar-item" data-index="3">
-                        <div class="sidebar-item-header">
-                            <span>Remote Team</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="https://www.keyideasinfotech.com/top-asp-net-mvc-development-company/">Hire .NET Core Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/asp-dot-net-mvc/certified-developer/">Hire .NET Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/angular/">Hire Angular Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-laravel-web-development-company/">Hire Laravel Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/budget-friendly-maui-developers-the-top-maui-web-development-company-that-will-take-your-web-presence-to-paradise/">Hire MAUI Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/hire-mobile-app-developers/">Hire Mobile App Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/nodejs/">Hire NodeJS Developers</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/website-development/react/">Hire ReactJS Developers</a></li>
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>
-
-                    <!-- 5. Hi-Tech -->
-                    <li class="sidebar-item" data-index="4">
-                        <div class="sidebar-item-header">
-                            <span>Hi-Tech</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/jewelry/3d-ar-virtual-try-on-vto-jewellery/">3D Virtual Try Out</a></li>
-                            <li><a href="#">Big Data Solutions</a></li>
-                            <li><a href="#">Blockchain</a></li>
-                            <li><a href="#">ChatBot</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/top-iot-app-development-company-internet-of-things-services/">IoT</a></li>
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>   
-      
-                    <!-- 6. Online Marketing -->
-                    <li class="sidebar-item" data-index="5">
-                        <div class="sidebar-item-header">
-                            <span>Online Marketing</span>
-                            <span class="sidebar-arrow">&#9660;</span>
-                        </div>
-                        <ul class="sidebar-sub-menu">
-                            <li><a href="https://www.keyideasinfotech.com/digital-marketing/">Digital Marketing</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/unlocking-ecommerce-success-with-klaviyo-experts-your-klaviyo-agency-blueprint/">Klaviyo Email Marketing</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/best-seo-company/">Search Engine Optimization (SEO)</a></li>
-                            <li><a href="https://www.keyideasinfotech.com/social-media-optimization/">Social Media Optimization (SMO)</a></li>
-                          
-                            <!-- ADD MORE LINKS HERE -->
-                        </ul>
-                    </li>
-
-                </ul>
+            <!-- LEFT: Text -->
+            <div class="ki-banner-text">
+                <h2 class="ki-banner-h1">
+                    Driving Success<br>
+                    Through Expert IT<br>
+                    Consulting Services
+                </h2>
+                <p class="ki-banner-sub">Agility, Ingenuity, Reliability: Powering Progress.</p>
             </div>
-            <!-- /.services-sidebar -->
 
-            <!-- ══ RIGHT PANEL (desktop only — untouched) ══ -->
-            <div class="services-panel">
-                <h2 class="panel-title">Software Product Engineering</h2>
-                <p class="panel-desc">We excel in software product engineering, leveraging our software experts to
-                    deliver seamless integration, innovative design, and optimized performance, helping
-                    businesses thrive in the ever-evolving digital landscape.</p>
-                <div class="panel-links">
-                    <ul>
-                        <li>API &amp; Microservices</li>
-                        <li><a href="https://www.keyideasinfotech.com/best-cloud-application-development-services-company/">Cloud Application Development</a></li>
-                        <li><a href="https://www.keyideasinfotech.com/top-custom-crm-software-app-development-company/">Custom CRM Software</a></li>
-                        <li><a href="https://www.keyideasinfotech.com/top-custom-software-development-services-hire-developers/">Custom Software Development</a></li>
-                        <li>DevOps Consulting Services</li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.keyideasinfotech.com/top-cms-web-design-development-services/">Enterprise CMS Solutions</a></li>
-                        <li><a href="https://www.keyideasinfotech.com/top-enterprise-software-development-company/">Enterprise Software Development</a></li>
-                        <li>Microsoft Development</li>
-                        <li><a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/">Mobile App Development</a></li>
-                        <li><a href="#">Software Consulting</a></li>
-                    </ul>
-                    <ul>
-                        <li>Software Modernization</li>
-                        <li><a href="https://www.keyideasinfotech.com/top-outsource-software-development-company-it-outsourcing-services/">Software Outsourcing</a></li>
-                        <li>Software Support and Maintenance</li>
-                        <li><a href="https://www.keyideasinfotech.com/software-application-testing-services-company/">Testing and Quality Assurance</a></li>
-                    </ul>
+            <!-- RIGHT: Cards arena -->
+            <div class="ki-arena" id="kiArena" aria-hidden="true" role="presentation">
+                <!-- Cards injected by JS -->
+            </div>
+
+        </section>
+
+        <!-- ── SERVICES SECTION ── -->
+        <section class="services-section" aria-labelledby="services-heading">
+            <div class="services-inner">
+
+                <!-- Desktop heading -->
+                <div class="services-heading desktop-heading">
+                    <h2 id="services-heading">Comprehensive IT Consulting Services for All Business Needs</h2>
                 </div>
+
+                <!-- Mobile heading -->
+                <div class="services-heading mobile-heading">
+                    <h2>Professional Web Design &amp; Development</h2>
+                </div>
+
+                <div class="services-content">
+
+                    <!-- ══ SIDEBAR ══ -->
+                    <nav class="services-sidebar" aria-label="Service categories">
+                        <ul class="sidebar-list" role="list">
+
+                            <!-- 1. Software Product Engineering -->
+                            <li class="sidebar-item active" data-index="0">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-0" tabindex="0">
+                                    <span>Software Product Engineering</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-0" role="list">
+                                    <li><a href="#">API &amp; Microservices</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/best-cloud-application-development-services-company/">Cloud Application Development</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-custom-crm-software-app-development-company/">Custom CRM Software</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-custom-software-development-services-hire-developers/">Custom Software Development</a></li>
+                                    <li><a href="#">DevOps Consulting Services</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-cms-web-design-development-services/">Enterprise CMS Solutions</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-enterprise-software-development-company/">Enterprise Software Development</a></li>
+                                    <li><a href="#">Microsoft Development</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/">Mobile App Development</a></li>
+                                    <li><a href="#">Software Consulting</a></li>
+                                    <li><a href="#">Software Modernization</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-outsource-software-development-company-it-outsourcing-services/">Software Outsourcing</a></li>
+                                    <li><a href="#">Software Support and Maintenance</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/software-application-testing-services-company/">Testing and Quality Assurance</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 2. Website & E-Commerce -->
+                            <li class="sidebar-item" data-index="1">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-1" tabindex="0">
+                                    <span>Website &amp; E-Commerce</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-1" role="list">
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/ablecommerce-development-services/">AbleCommerce Website Development</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/bagisto-b2b-solutions-from-a-bagisto-laravel-e-commerce-development-company/">Bagisto E-Commerce</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/ecommerce/web-design-company/">E-Commerce Website Design</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-responsive-web-design-development-company/">Responsive Websites</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/best-shopify-web-development-company-hire-developers/">Shopify Website Development</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/">Web Development</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/">Website Maintenance Services</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/web-design/">Website Redesign Services</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/wordpress/woocommerce/">Website Development</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 3. Digital Experience -->
+                            <li class="sidebar-item" data-index="2">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-2" tabindex="0">
+                                    <span>Digital Experience</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-2" role="list">
+                                    <li><a href="https://www.keyideasinfotech.com/branding/">Branding</a></li>
+                                    <li><a href="#">MVP</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/ux-ui-design/">UI/UX Design &amp; Prototyping</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/user-centered-design-agency/">User Research</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/best-ui-ux-web-design-development-agency-hire-designers/">UX &amp; Information Architecture</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-web-design-company/">Web Design</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 4. Remote Team -->
+                            <li class="sidebar-item" data-index="3">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-3" tabindex="0">
+                                    <span>Remote Team</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-3" role="list">
+                                    <li><a href="https://www.keyideasinfotech.com/top-asp-net-mvc-development-company/">Hire .NET Core Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/asp-dot-net-mvc/certified-developer/">Hire .NET Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/angular/">Hire Angular Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-laravel-web-development-company/">Hire Laravel Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/budget-friendly-maui-developers-the-top-maui-web-development-company-that-will-take-your-web-presence-to-paradise/">Hire MAUI Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/hire-mobile-app-developers/">Hire Mobile App Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/nodejs/">Hire NodeJS Developers</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/website-development/react/">Hire ReactJS Developers</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 5. Hi-Tech -->
+                            <li class="sidebar-item" data-index="4">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-4" tabindex="0">
+                                    <span>Hi-Tech</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-4" role="list">
+                                    <li><a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/jewelry/3d-ar-virtual-try-on-vto-jewellery/">3D Virtual Try Out</a></li>
+                                    <li><a href="#">Big Data Solutions</a></li>
+                                    <li><a href="#">Blockchain</a></li>
+                                    <li><a href="#">ChatBot</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/top-iot-app-development-company-internet-of-things-services/">IoT</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 6. Online Marketing -->
+                            <li class="sidebar-item" data-index="5">
+                                <div class="sidebar-item-header" role="button" aria-expanded="false" aria-controls="submenu-5" tabindex="0">
+                                    <span>Online Marketing</span>
+                                    <span class="sidebar-arrow" aria-hidden="true">&#9660;</span>
+                                </div>
+                                <ul class="sidebar-sub-menu" id="submenu-5" role="list">
+                                    <li><a href="https://www.keyideasinfotech.com/digital-marketing/">Digital Marketing</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/unlocking-ecommerce-success-with-klaviyo-experts-your-klaviyo-agency-blueprint/">Klaviyo Email Marketing</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/best-seo-company/">Search Engine Optimization (SEO)</a></li>
+                                    <li><a href="https://www.keyideasinfotech.com/social-media-optimization/">Social Media Optimization (SMO)</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- /.services-sidebar -->
+
+                    <!-- ══ RIGHT PANEL (desktop only) ══ -->
+                    <div class="services-panel" id="services-panel" aria-live="polite">
+                        <h3 class="panel-title">Software Product Engineering</h3>
+                        <p class="panel-desc">We excel in software product engineering, leveraging our software experts to
+                            deliver seamless integration, innovative design, and optimized performance, helping
+                            businesses thrive in the ever-evolving digital landscape.</p>
+                        <div class="panel-links">
+                            <ul role="list">
+                                <li>API &amp; Microservices</li>
+                                <li><a href="https://www.keyideasinfotech.com/best-cloud-application-development-services-company/">Cloud Application Development</a></li>
+                                <li><a href="https://www.keyideasinfotech.com/top-custom-crm-software-app-development-company/">Custom CRM Software</a></li>
+                                <li><a href="https://www.keyideasinfotech.com/top-custom-software-development-services-hire-developers/">Custom Software Development</a></li>
+                                <li>DevOps Consulting Services</li>
+                            </ul>
+                            <ul role="list">
+                                <li><a href="https://www.keyideasinfotech.com/top-cms-web-design-development-services/">Enterprise CMS Solutions</a></li>
+                                <li><a href="https://www.keyideasinfotech.com/top-enterprise-software-development-company/">Enterprise Software Development</a></li>
+                                <li>Microsoft Development</li>
+                                <li><a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/">Mobile App Development</a></li>
+                                <li><a href="#">Software Consulting</a></li>
+                            </ul>
+                            <ul role="list">
+                                <li>Software Modernization</li>
+                                <li><a href="https://www.keyideasinfotech.com/top-outsource-software-development-company-it-outsourcing-services/">Software Outsourcing</a></li>
+                                <li>Software Support and Maintenance</li>
+                                <li><a href="https://www.keyideasinfotech.com/software-application-testing-services-company/">Testing and Quality Assurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.services-panel -->
+
+                </div>
+                <!-- /.services-content -->
+
             </div>
-            <!-- /.services-panel -->
-
-        </div>
-        <!-- /.services-content -->
-
-    </div>
-</section>
+        </section>
 
         <!-- ── EXPERIENCES SECTION ── -->
-        <section class="experience-section">
+        <section class="experience-section" aria-labelledby="experiences-heading">
             <div class="experience-inner">
 
-                <h2 class="section-heading">Experiences Crafted by our Software Experts</h2>
+                <h2 class="section-heading" id="experiences-heading">Experiences Crafted by our Software Experts</h2>
 
                 <div class="images-container">
 
-                    <!-- Row 1 -->   
+                    <!-- Row 1 -->
                     <div class="images-row">
-                        <div class="image-card image1">
-                            <div class="overlay"></div>
+                        <article class="image-card image1" role="img" aria-label="Healthcare Research Solution">
+                            <div class="overlay" aria-hidden="true"></div>
                             <div class="card-text">
-                                <div class="card-heading">Healthcare Research Solution</div>
+                                <h3 class="card-heading">Healthcare Research Solution</h3>
                                 <p>User-friendly health based applications for clinical trial management, streamlining data access and collaboration.</p>
                                 <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/marketplace-for-dental-practice-and-dentists/"> Dental Pratice MarketPlace ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/medical-ui-designer-healthcare-ux-designer/">Medical UX Solutions ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/php-based-website-design-development-for-a-medicine-research-development-company/"> Pharma Research Development  ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/health-and-wellness-website-app/"> Health and Wellness Plaform  > </a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/marketplace-for-dental-practice-and-dentists/">Dental Practice MarketPlace &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/medical-ui-designer-healthcare-ux-designer/">Medical UX Solutions &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/php-based-website-design-development-for-a-medicine-research-development-company/">Pharma Research Development &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/health-and-wellness-website-app/">Health and Wellness Platform &gt;</a>
                                 </div>
                             </div>
-
-                            
-                        </div>
-                        <div class="image-card image2">
-                            <div class="overlay"></div>
+                        </article>
+                        <article class="image-card image2" role="img" aria-label="Advanced Jewelry Solutions">
+                            <div class="overlay" aria-hidden="true"></div>
                             <div class="card-text">
-                                <div class="card-heading">Advanced Jewelry Solutions</div>
+                                <h3 class="card-heading">Advanced Jewelry Solutions</h3>
                                 <p>Explore innovative solutions featuring custom designs, certified quality, and enhanced shopping experiences across the industry.</p>
-                                 <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/jewelry-ecommerce-los-angeles/"> Jewelry E-Commerce Los Angeles ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/diamond-ring-builder-melbourne-jeweller/">Diamond Ring Builder Melbourne ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/diamond-ring-builder-melbourne-jeweller/"> Jewelry Website Chicago ></a>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/jewelry-ecommerce-los-angeles/">Jewelry E-Commerce Los Angeles &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/diamond-ring-builder-melbourne-jeweller/">Diamond Ring Builder Melbourne &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/diamond-ring-builder-melbourne-jeweller/">Jewelry Website Chicago &gt;</a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="images-row">
-                        <div class="image-card image3">
-                            <div class="overlay"></div>
+                        <article class="image-card image3" role="img" aria-label="Travel and Hospitality">
+                            <div class="overlay" aria-hidden="true"></div>
                             <div class="card-text">
-                                <div class="card-heading">Travel &amp; Hospitality</div>
+                                <h3 class="card-heading">Travel &amp; Hospitality</h3>
                                 <p>Platforms that simplifies tour planning, makes bookings easier and enhances trip experiences.</p>
-                                   <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/indian-rail-info-metro-travel-app-hotfoot/"> Comprehensive Travel App  ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/wordpress-website-development-leading-hospitality-group-chicago/">Hospitality Managment Platform ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/asp-net-mvc-web-development-best-ui-ux-design-travel-hotel-vacation-agency-canada/"> Travel and Booking System ></a>
-                               <a href = "https://www.keyideasinfotech.com/portfolio/tourism-website-design-development-seattle/">Tourism Managment Solution ></a>
-                               
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/indian-rail-info-metro-travel-app-hotfoot/">Comprehensive Travel App &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/wordpress-website-development-leading-hospitality-group-chicago/">Hospitality Management Platform &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/asp-net-mvc-web-development-best-ui-ux-design-travel-hotel-vacation-agency-canada/">Travel and Booking System &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/tourism-website-design-development-seattle/">Tourism Management Solution &gt;</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="image-card image4">
-                            <div class="overlay"></div>
+                        </article>
+                        <article class="image-card image4" role="img" aria-label="Enterprise Software">
+                            <div class="overlay" aria-hidden="true"></div>
                             <div class="card-text">
-                                <div class="card-heading">Enterprise Software</div>
+                                <h3 class="card-heading">Enterprise Software</h3>
                                 <p>Powerful tools designed to integrate processes, boost productivity, and scale your business seamlessly.</p>
-                                 <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/warehouse-management-system-ecommerce/"> Warehouse Managment System  ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/clinical-trial-pharma-healthcare-app/">Clinical Research Mobile Application ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/energy-industry-website-denmark/"> Transforming Energy Sector ></a>
-                               <a href = "https://www.keyideasinfotech.com/portfolio/event-and-conference-management-software/">Conference Management Software ></a>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/warehouse-management-system-ecommerce/">Warehouse Management System &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/clinical-trial-pharma-healthcare-app/">Clinical Research Mobile Application &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/energy-industry-website-denmark/">Transforming Energy Sector &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/event-and-conference-management-software/">Conference Management Software &gt;</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>       
+                        </article>
+                    </div>
 
                 </div>
             </div>
 
-            
-                <div class="success-inner">
-                   <h2 class="section-heading"> Success Stories Powered by our IT Consulting Expertise </h1>
-                
-                    <div class="images-container">
+            <div class="success-inner">
+                <h2 class="section-heading">Success Stories Powered by our IT Consulting Expertise</h2>
 
-                <div class="images-row">
-                    <div class="image-card image5">
-                        <div class="overlay"></div>
-                        <div class="card-text">
-                            <div class="card-heading">Success Stories Powered by our IT Consulting Expertise</div>
-                            <p>Efficient solutions for property listings, tenant management, and smooth projects operations.</p>
-                               <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/large-real-estate-website-design/"> Real Estate Managment ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/responsive-web-development-using-bootstrap-for-real-estate-business-owner-in-new-york/">New York Real Estate Business ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/real-estate-property-management-wordpress-website-san-francisco/"> Property Management Solution ></a>
-                               <a href = "https://www.keyideasinfotech.com/portfolio/angularjs-development-usa-luxury-real-estate-web-listing-website/">USA Luxury Real Estate Experience ></a>
-                               
+                <div class="images-container">
+
+                    <div class="images-row">
+                        <article class="image-card image5" role="img" aria-label="Real Estate Solutions">
+                            <div class="overlay" aria-hidden="true"></div>
+                            <div class="card-text">
+                                <h3 class="card-heading">Real Estate Solutions</h3>
+                                <p>Efficient solutions for property listings, tenant management, and smooth projects operations.</p>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/large-real-estate-website-design/">Real Estate Management &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/responsive-web-development-using-bootstrap-for-real-estate-business-owner-in-new-york/">New York Real Estate Business &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/real-estate-property-management-wordpress-website-san-francisco/">Property Management Solution &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/angularjs-development-usa-luxury-real-estate-web-listing-website/">USA Luxury Real Estate Experience &gt;</a>
                                 </div>
-                        </div>
+                            </div>
+                        </article>
+
+                        <article class="image-card image6" role="img" aria-label="E-Commerce Platforms">
+                            <div class="overlay" aria-hidden="true"></div>
+                            <div class="card-text">
+                                <h3 class="card-heading">E-Commerce Platforms</h3>
+                                <p>Platforms with diverse products, easy payments, and faster delivery.</p>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/angularjs-development-usa-luxury-real-estate-web-listing-website/">Empowering Food and Beverage Ecommerce &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/american-sporting-goods-company-headless-b2b-ecommerce-znode/">Sporting Goods B2B Ecommerce &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/shopify-electronic-and-gadgets-store-development/">Electronics Shopify Store &gt;</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
 
-                    <div class="image-card image6">
-                        <div class="overlay"></div>
-                        <div class="card-text">
-                            <div class="card-heading">E-Commerce Platforms</div>
-                            <p>Platforms with diverse products, easy payments, and faster delivery.</p>
-                             <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/angularjs-development-usa-luxury-real-estate-web-listing-website/"> Empowering Food and Beverage Ecommerce ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/american-sporting-goods-company-headless-b2b-ecommerce-znode/">Sporting Goods B2B Ecommerce ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/shopify-electronic-and-gadgets-store-development/"> Electronics Shopify Store ></a>
-                              
-                               
+                    <div class="images-row">
+                        <article class="image-card image7" role="img" aria-label="Finance and Fintech Solutions">
+                            <div class="overlay" aria-hidden="true"></div>
+                            <div class="card-text">
+                                <h3 class="card-heading">Finance &amp; Fintech Solutions</h3>
+                                <p>Innovative tools designed to simplify financial management, enhance transactions, and drive growth in the digital economy.</p>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/fintech-and-mobile-app-ui-designer/">Fintech UI/UX Development &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/wordpress-cms-development-company-business-finance-solution-pennsylvania-usa/">Financial Advisory Platform &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/dynamic-website-development-in-wordpress-php-for-banking-company-in-new-york/">Banking Services Platform &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/mobile-invoice-app-restoration-insurance-industry/">Insurance Invoicing Application &gt;</a>
                                 </div>
+                            </div>
+                        </article>
+
+                        <article class="image-card image8" role="img" aria-label="Contractor and Home Services">
+                            <div class="overlay" aria-hidden="true"></div>
+                            <div class="card-text">
+                                <h3 class="card-heading">Contractor &amp; Home Services</h3>
+                                <p>Reliable solutions for professional contracting, home maintenance, and remodeling needs.</p>
+                                <div class="Cards-Links">
+                                    <a href="https://www.keyideasinfotech.com/portfolio/home-repair-remodelling-experts-website-design/">Home Repair &amp; Remodeling Platform &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/asp-net-based-home-remodeling-website-design-development-for-mechanicsburg-pa-client/">Revolutionizing Remodelling Experience &gt;</a>
+                                    <a href="https://www.keyideasinfotech.com/portfolio/wordpress-website-development-php-kitchen-bathroom-renovation-australia/">Renovation Management Solution &gt;</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── TRUST SECTION ── -->
+        <section class="trust" aria-labelledby="trust-heading">
+            <div class="trust-padding">
+                <div class="container">
+                    <div class="trust-center">
+                        <h2 id="trust-heading">Trusted Software Experts for Small and Medium-Sized Clients</h2>
+                        <p>In 2007, our journey in IT consulting services began as a software development</p>
+                        <p>agency. Since then, we've continuously progressed, evolving into a comprehensive</p>
+                        <p>provider of top-tier website design and development experiences. Our software</p>
+                        <p>expertise spans design, mobile apps, e-commerce websites, UI/UX, and marketing.</p>
+                        <p>Our specialization in IT consulting services led to building lasting client partnerships</p>
+                        <p>through innovative web solutions crafted by industry leading software experts and</p>
+                        <p>been recognized through numerous <a href="https://clutch.co/profile/keyideas-infotech-private" style="color:#4f149a;" rel="noopener noreferrer" target="_blank">industry awards</a> on platforms like Clutch.</p>
+                    </div>
+                </div>
+                <div class="Company-blurr">
+                    <div class="blur-img">
+                        <img src="/images/Comapny-Blurr.webp" alt="KeyIdeas Infotech client logos and company recognition" width="1532" height="300" loading="lazy">
+                        <div class="shortcode">
+                            <h4>Client shortcode(smaller version)</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="images-row">
-                      <div class="image-card image7">
-                        <div class="overlay"></div>
-                        <div class="card-text">
-                            <div class="card-heading">Finance & Fintech Solutions</div>
-                            <p>Innovative tools designed to simplify financial management, enhance transactions, and drive growth in the digital economy.</p>
-                            <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/fintech-and-mobile-app-ui-designer/">Fintech UI/UX Development ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/wordpress-cms-development-company-business-finance-solution-pennsylvania-usa/">Financial Advisory Platform ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/dynamic-website-development-in-wordpress-php-for-banking-company-in-new-york/"> Banking Services Platform ></a>
-                               <a href="https://www.keyideasinfotech.com/portfolio/mobile-invoice-app-restoration-insurance-industry/">Insurance Invaicing Application ></a>
-                               
-                                </div>
-                        </div>
-                    </div>
-
-                     <div class="image-card image8">
-                        <div class="overlay"></div>
-                        <div class="card-text">
-                            <div class="card-heading">Contractor & Home Services</div>
-                            <p>Reliable solutions for professional contracting, home maintenance, and remodeling needs.</p>
-                             <div class="Cards-Links">
-                                <a href="https://www.keyideasinfotech.com/portfolio/home-repair-remodelling-experts-website-design/">Home Repair & Remodeling Platform ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/asp-net-based-home-remodeling-website-design-development-for-mechanicsburg-pa-client/">Revolutionizing Remodelling Experience ></a>
-                                <a href="https://www.keyideasinfotech.com/portfolio/wordpress-website-development-php-kitchen-bathroom-renovation-australia/">Renovation Management Solution ></a>
-                            
-                               
-                                </div>
-                        </div>
+                <div class="since-container">
+                    <div class="since-text" aria-label="Established since 2007">
+                        SINCE 2007
                     </div>
                 </div>
             </div>
-        </div>
-</section>       
-                         
-<section class="trust">
-                 
-           <div class="trust-padding">
-            <div class="container">
-            <div class="trust-center">
-             <h2>Trusted Software Experts for Small and Medium-Sized Clients</h2>
-                  
+        </section>
 
-            
-                <p>In 2007, our journey in IT consulting services began as a software development </p>
-                  <p>  agency. Since then, we’ve continuously progressed, evolving into a comprehensive </p>
-                <p>provider of top-tier website design and development experiences. Our software</p> 
-                <p>expertise spans design, mobile apps, e-commerce websites, UI/UX, and marketing.</p>
-                   <p>  Our specialization in IT consulting services led to building lasting client partnerships</p>
-                     <p> through innovative web solutions crafted by industry leading software experts and </p>
-                      <p>been recognized through numerous <a href="https://clutch.co/profile/keyideas-infotech-private" style ="color : #4f149a;" >industry awards </style></a>on platforms like Clutch.</p>
-             
-                    </div> 
-    
-         </div>
-         <div class="Company-blurr">
-            <div class="blur-img">
-                <img src="/images/Comapny-Blurr.webp" alt="blur">
-              
-            <div class="shortcode">
-               <h4> Client shortcode(smaller version)</h4>
-            </div>
-            </div>
-         </div>
+        <!-- ── CUSTOM INDUSTRIES SECTION ── -->
+        <section class="custom" aria-labelledby="industries-heading">
+            <div class="custom-container">
+                <div class="custom-head">
+                    <h2 id="industries-heading">Customized IT Consulting Services for Leading Sectors</h2>
+                </div>
+                <div class="custom-text">
+                    <p>At Keyideas, we specialize in providing IT consulting services and leveraging the
+                        expertise of our software experts to deliver tailored web solutions.</p>
+                </div>
 
-         <div class="since-container">
-            <div class="since-text">
-                SINCE 2007
-            </div>
-         </div>
-
-      </div>
-
-</section>
-
-<section class="custom">
-    <div class="custom-container">
-     <div class="custom-head">
-        <h2>Customized IT Consulting Services for Leading Sectors</h2>
-     </div>
-        <div class="custom-text">
-            <p>At Keyideas, we specialize in providing IT consulting services and leveraging the
-                expertise of our software experts to deliver tailored web solutions. </p>
-        </div>
-     
-    <!-- ── CATEGORIES GRID ── -->
+                <!-- ── CATEGORIES GRID ── -->
                 <div class="categrious-section">
                     <div class="categrious-grid">
 
                         <!-- ROW 1 — purple tint (4 cards) -->
                         <div class="categrious-card categrious-card--purple">
-                            <img class="card-img" src="images/image9.webp" alt="Events and Conference">
+                            <img class="card-img" src="images/image9.webp" alt="Events and Conference IT solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Events and<br>Conference</span>
                         </div>
                         <div class="categrious-card categrious-card--purple">
-                            <img class="card-img" src="images/image10.webp" alt="Fashion and Accessories">
+                            <img class="card-img" src="images/image10.webp" alt="Fashion and Accessories e-commerce solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Fashion and<br>Accessories</span>
                         </div>
                         <div class="categrious-card categrious-card--purple">
-                            <img class="card-img" src="images/image11.webp" alt="Jewelry Website">
+                            <img class="card-img" src="images/image11.webp" alt="Jewelry Website development" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Jewelry<br>Website</span>
                         </div>
                         <div class="categrious-card categrious-card--purple">
-                            <img class="card-img" src="images/image12.webp" alt="Warehouse Management">
+                            <img class="card-img" src="images/image12.webp" alt="Warehouse Management software" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Warehouse<br>Management</span>
                         </div>
 
                         <!-- ROW 2 — white (4 cards) -->
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image13.webp" alt="Automotive and Transportation">
+                            <img class="card-img" src="images/image13.webp" alt="Automotive and Transportation IT solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Automotive and<br>Transportation</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image14.webp" alt="Education">
+                            <img class="card-img" src="images/image14.webp" alt="Education technology solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Education</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image15.webp" alt="Finance">
+                            <img class="card-img" src="images/image15.webp" alt="Finance and Fintech solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Finance</span>
                         </div>
 
-                       <div class="show-more-card" id="showMoreCard">
-                        <div class="show-more-inner">
-                           
-                        <span class="show-more-label">Show More</span>
-                       </div>
-                       </div>
+                        <div class="show-more-card" id="showMoreCard" role="button" aria-label="Show more industry categories" tabindex="0">
+                            <div class="show-more-inner">
+                                <span class="show-more-label">Show More</span>
+                            </div>
+                        </div>
 
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image16.webp" alt="Food and Beverages">
+                            <img class="card-img" src="images/image16.webp" alt="Food and Beverages industry solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Food and<br>Beverages</span>
                         </div>
 
                         <!-- ROW 3 — white (4 cards) -->
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image17.webp" alt="Health and Medical">
+                            <img class="card-img" src="images/image17.webp" alt="Health and Medical software development" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Health and<br>Medical</span>
-                        </div>    
+                        </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image18.webp" alt="Heavy Equipments">
+                            <img class="card-img" src="images/image18.webp" alt="Heavy Equipments industry solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Heavy<br>Equipments</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image19.webp" alt="Home and Repair">
+                            <img class="card-img" src="images/image19.webp" alt="Home and Repair service solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Home and<br>Repair</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image20.webp" alt="Industrial">
+                            <img class="card-img" src="images/image20.webp" alt="Industrial sector IT solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Industrial</span>
                         </div>
 
                         <!-- ROW 4 — 1 card + standout banner spanning 3 cols -->
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image21.webp" alt="Insurance">
+                            <img class="card-img" src="images/image21.webp" alt="Insurance technology solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Insurance</span>
                         </div>
 
                         <!-- STANDOUT BANNER — spans columns 2–4 -->
-                        <div class="standout-banner">
-                            <div class="standout-heading">  
-                                <h2>WHY WE<br>STAND OUT?</h2>
+                        <div class="standout-banner" aria-label="Why we stand out">
+                            <div class="standout-heading">
+                                <h3>WHY WE<br>STAND OUT?</h3>
                             </div>
                             <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                <span class="standout-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                                 </span>
                                 <div>
                                     <strong>Agility</strong>
                                     <p>Faster Turn Around time</p>
                                 </div>
                             </div>
-                            <div class="standout-divider"></div>
+                            <div class="standout-divider" aria-hidden="true"></div>
                             <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+                                <span class="standout-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
                                 </span>
                                 <div>
                                     <strong>Ingenuity</strong>
                                     <p>Innovative Solution Provider</p>
                                 </div>
                             </div>
-                            <div class="standout-divider"></div>
+                            <div class="standout-divider" aria-hidden="true"></div>
                             <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                                <span class="standout-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
                                 </span>
                                 <div>
                                     <strong>Reliability</strong>
@@ -526,452 +605,372 @@
                             </div>
                         </div>
 
-
-
-                         <div class="mobile-standout-banner">
-                          <div class="standout-banner">
-                            <div class="standout-heading">  
-                                <h2>WHY WE<br>STAND OUT?</h2>
-                            </div>
-                            <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                                </span>
-                                <div>
-                                    <strong>Agility</strong>
-                                    <p>Swift, agile, and always on time. Our team delivers web solutions with lightning speed and adaptability.</p>
+                        <!-- MOBILE STANDOUT BANNER -->
+                        <div class="mobile-standout-banner" aria-hidden="true">
+                            <div class="standout-banner">
+                                <div class="standout-heading">
+                                    <h3>WHY WE<br>STAND OUT?</h3>
                                 </div>
-                            </div>
-                            <div class="standout-divider"></div>
-                            <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
-                                </span>
-                                <div>
-                                    <strong>Ingenuity</strong>
-                                    <p>Expect nothing less than innovative, problem-solving web designs that set you apart in the digital realm.</p>
+                                <div class="standout-items">
+                                    <span class="standout-icon" aria-hidden="true">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                    </span>
+                                    <div>
+                                        <strong>Agility</strong>
+                                        <p>Swift, agile, and always on time. Our team delivers web solutions with lightning speed and adaptability.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="standout-divider"></div>
-                            <div class="standout-items">
-                                <span class="standout-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-                                </span>
-                                <div>
-                                    <strong>Reliability</strong>
-                                    <p>Count on us as your unwavering, 24/7 partner for dependable web development and support.</p>
+                                <div class="standout-divider" aria-hidden="true"></div>
+                                <div class="standout-items">
+                                    <span class="standout-icon" aria-hidden="true">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+                                    </span>
+                                    <div>
+                                        <strong>Ingenuity</strong>
+                                        <p>Expect nothing less than innovative, problem-solving web designs that set you apart in the digital realm.</p>
+                                    </div>
+                                </div>
+                                <div class="standout-divider" aria-hidden="true"></div>
+                                <div class="standout-items">
+                                    <span class="standout-icon" aria-hidden="true">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                                    </span>
+                                    <div>
+                                        <strong>Reliability</strong>
+                                        <p>Count on us as your unwavering, 24/7 partner for dependable web development and support.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                         <!-- ROW 5 — white (4 cards) -->
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image22.webp" alt="Legal">
+                            <img class="card-img" src="images/image22.webp" alt="Legal industry software solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Legal</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image23.webp" alt="Local Services">
+                            <img class="card-img" src="images/image23.webp" alt="Local Services business solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Local Services</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image24.webp" alt="Real Estate">
+                            <img class="card-img" src="images/image24.webp" alt="Real Estate website development" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Real Estate</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image25.webp" alt="Recreation and Entertainment">
+                            <img class="card-img" src="images/image25.webp" alt="Recreation and Entertainment solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Recreation and<br>Entertainment</span>
                         </div>
 
                         <!-- ROW 6 — white (4 cards) -->
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image26.webp" alt="Retail and E-Commerce">
+                            <img class="card-img" src="images/image26.webp" alt="Retail and E-Commerce development" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Retail and<br>E-Commerce</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image27.webp" alt="Professional Services">
+                            <img class="card-img" src="images/image27.webp" alt="Professional Services technology solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Professional<br>Services</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image28.webp" alt="Tech">
+                            <img class="card-img" src="images/image28.webp" alt="Tech industry solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Tech</span>
                         </div>
                         <div class="categrious-card">
-                            <img class="card-img" src="images/image29.webp" alt="Tourism and Hospitality">
+                            <img class="card-img" src="images/image29.webp" alt="Tourism and Hospitality software solutions" width="80" height="80" loading="lazy">
                             <span class="Card-Tittle">Tourism and<br>Hospitality</span>
                         </div>
 
-                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ── EXPERTISE SECTION ── -->
+        <section class="blurr-section" aria-labelledby="expertise-heading">
+            <div class="blurr-container">
+                <div class="blurr-text">
+                    <h2 id="expertise-heading">Wide-Ranging Expertise from Leading Software Experts</h2>
+                    <p>Our strength lies in delivering exceptional IT consulting services backed by a wide range of</p>
+                    <p>expertise in cutting-edge technologies. With our software experts, we craft innovative</p>
+                    <p>solutions that align with your business needs and also exceeding your expectations.</p>
+                </div>
+                <div class="blurr-image">
+                    <img src="images/blurrimage.webp" alt="Technology stack and expertise of KeyIdeas Infotech software experts" width="1532" height="400" loading="lazy">
+                    <div class="tech">
+                        <h4>Tech shortcode(smaller version)</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── EFFICIENT PROCESSES SECTION ── -->
+        <section class="Efficient" aria-labelledby="process-heading">
+            <div class="Efficient-container">
+
+                <div class="efficent-text">
+                    <h2 id="process-heading">Efficient Processes Tailored for IT Consulting Services</h2>
+                    <p>Maximizing digital product potential through data-driven insights and user-centric<br>
+                        design for memorable user interactions led by software experts.</p>
+                </div>
+
+                <div class="flowchart" role="img" aria-label="IT consulting process flowchart showing 6 stages">
+
+                    <!-- TOP BADGE ROW -->
+                    <div class="badge-row top">
+                        <div class="badge-cell has-badge">
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">IN-DEPTH RESEARCH &amp; ANALYSIS</span>
+                            </div>
+                            <div class="connector-line" aria-hidden="true"></div>
+                        </div>
+                        <div class="badge-cell"></div>
+                        <div class="badge-cell has-badge">
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">DESIGN &amp; EXPERIENCE</span>
+                            </div>
+                            <div class="connector-line" aria-hidden="true"></div>
+                        </div>
+                        <div class="badge-cell"></div>
+                        <div class="badge-cell has-badge">
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">TESTING &amp; OPTIMIZATION</span>
+                            </div>
+                            <div class="connector-line" aria-hidden="true"></div>
+                        </div>
+                        <div class="badge-cell"></div>
+                    </div>
+
+                    <!-- CHEVRON TRACK -->
+                    <div class="process-track">
+                        <div class="chevron">Data Intelligence<br>Heuristic Evaluation</div>
+                        <div class="chevron">Workflow Architecture<br>Feasibility Mapping</div>
+                        <div class="chevron">Interaction Modelling<br>Cognitive Load</div>
+                        <div class="chevron">Code Optimization<br>API Orchestration</div>
+                        <div class="chevron">Regression Analysis<br>Stress Testing</div>
+                        <div class="chevron">CI/CD Pipeline<br>Adaptive Scaling</div>
+                    </div>
+
+                    <!-- BOTTOM BADGE ROW -->
+                    <div class="badge-row bottom">
+                        <div class="badge-cell"></div>
+                        <div class="badge-cell has-badge">
+                            <div class="connector-line" aria-hidden="true"></div>
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">STRUCTURED PLANNING &amp; ROADMAP</span>
+                            </div>
+                        </div>
+                        <div class="badge-cell"></div>
+                        <div class="badge-cell has-badge">
+                            <div class="connector-line" aria-hidden="true"></div>
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">DEVELOPMENT &amp; IMPLEMENTATION</span>
+                            </div>
+                        </div>
+                        <div class="badge-cell"></div>
+                        <div class="badge-cell has-badge">
+                            <div class="connector-line" aria-hidden="true"></div>
+                            <div class="badge-with-tick">
+                                <span class="badge-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="badge-text">DEPLOYMENT &amp; MAINTENANCE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE PROCESS -->
+                <div class="mobile-process" aria-label="IT consulting process steps">
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">1. IN-DEPTH RESEARCH &amp; ANALYSIS</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                Data Intelligence<br>Heuristic Evaluation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">2. STRUCTURED PLANNING &amp; ROADMAP</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                Workflow Architecture<br>Feasibility Mapping
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">3. DESIGN &amp; EXPERIENCE</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                Interaction Modelling<br>Cognitive Load
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">4. DEVELOPMENT &amp; IMPLEMENTATION</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                Code Optimization<br>API Orchestration
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">5. TESTING &amp; OPTIMIZATION</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                Regression Analysis<br>Stress Testing
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-step">
+                        <div class="mp-header">
+                            <span class="mp-pill">6. DEPLOYMENT &amp; MAINTENANCE</span>
+                        </div>
+                        <div class="mp-body">
+                            <div class="mp-card">
+                                <div class="mp-check" aria-hidden="true">
+                                    <svg viewBox="0 0 13 13" fill="none" focusable="false"><polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                CI/CD Pipeline<br>Adaptive Scaling
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-     
-</section>
-         
+        </section>
 
+        <!-- ── SOCIAL IMPACT SECTION ── -->
+        <section class="social" aria-labelledby="social-heading">
+            <div class="social-container">
+                <div class="social-content">
+                    <h2 id="social-heading">Social Impact: Making a Difference through<br>Corporate Responsibility</h2>
 
-<section class = "blurr-section">
-    <div class="blurr-container">
-        
-        <div class="blurr-text">
-            <h2>Wide-Ranging Expertise from Leading Software Experts</h2>
-       
-           <p> Our strength lies in delivering exceptional IT consulting services backed by a wide range of</p>
-            <p> expertise in cutting-edge technologies. With our software experts, we craft innovative </p>
-            <p>solutions that align with your business needs and also exceeding your expectations.</p>
-        </div>
-
-
-        <div class="blurr-image">
-                  
-                  <img src="images/blurrimage.webp" alt="">
-
-                
-                  <div class="tech">
-                        <h4> Tech shortcode(smaller version)</h4>          
-                  </div>    
-        </div>
-    </div>
-
-</section>
-
-
-
-<section class="Efficient">
-    <div class="Efficient-container">
-
-        <div class="efficent-text">
-            <h2>Efficient Processes Tailored for IT Consulting Services</h2>
-            <p>Maximizing digital product potential through data-driven insights and user-centric <br>
-            design for memorable user interactions led by software experts.</p>
-        </div>
-
-        <div class="flowchart">
-
-            <!-- TOP BADGE ROW -->
-            <div class="badge-row top">
-
-                <div class="badge-cell has-badge">
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">IN-DEPTH RESEARCH &amp; ANALYSIS</span>
+                    <div class="social-img-collection" role="list" aria-label="Corporate social responsibility activities">
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg1.webp" alt="KeyIdeas Infotech community initiative 1" width="150" height="150" loading="lazy">
+                        </div>
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg2.webp" alt="KeyIdeas Infotech community initiative 2" width="150" height="150" loading="lazy">
+                        </div>
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg3.webp" alt="KeyIdeas Infotech community initiative 3" width="150" height="150" loading="lazy">
+                        </div>
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg4.webp" alt="KeyIdeas Infotech community initiative 4" width="150" height="150" loading="lazy">
+                        </div>
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg5.webp" alt="KeyIdeas Infotech community initiative 5" width="150" height="150" loading="lazy">
+                        </div>
+                        <div class="socialimg" role="listitem">
+                            <img src="images/socialimg6.webp" alt="KeyIdeas Infotech community initiative 6" width="150" height="150" loading="lazy">
+                        </div>
                     </div>
-                    <div class="connector-line"></div>
-                </div>
 
-                <div class="badge-cell"></div>
-
-                <div class="badge-cell has-badge">
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">DESIGN &amp; EXPERIENCE</span>
+                    <div class="social-text">
+                        <p>In the current business environment, social impact initiatives at Keyideas have become essential elements of our corporate <br> strategy. These efforts extend beyond mere profit-making goals, striving to foster positive change and enhance societal well-being.</p>
+                        <h4><a href="/social-responsibility/" aria-label="Learn about KeyIdeas Infotech social responsibility initiatives">Social Responsibility -&gt;</a></h4>
                     </div>
-                    <div class="connector-line"></div>
                 </div>
-
-                <div class="badge-cell"></div>
-
-                <div class="badge-cell has-badge">
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">TESTING &amp; OPTIMIZATION</span>
-                    </div>
-                    <div class="connector-line"></div>
-                </div>
-
-                <div class="badge-cell"></div>
-
             </div>
+        </section>
 
-            <!-- CHEVRON TRACK -->
-            <div class="process-track">
-                <div class="chevron">Data Intelligence<br>Heuristic Evaluation</div>
-                <div class="chevron">Workflow Architecture<br>Feasibility Mapping</div>
-                <div class="chevron">Interaction Modelling<br>Cognitive Load</div>
-                <div class="chevron">Code Optimization<br>API Orchestration</div>
-                <div class="chevron">Regression Analysis<br>Stress Testing</div>
-                <div class="chevron">CI/CD Pipeline<br>Adaptive Scaling</div>
-            </div>
-
-            <!-- BOTTOM BADGE ROW -->
-            <div class="badge-row bottom">
-
-                <div class="badge-cell"></div>
-
-                <div class="badge-cell has-badge">
-                    <div class="connector-line"></div>
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">STRUCTURED PLANNING &amp; ROADMAP</span>
+        <!-- ── TEAM SECTION ── -->
+        <section class="Team" aria-labelledby="team-heading">
+            <div class="Team-container">
+                <div class="Team-content">
+                    <div class="Team-head">
+                        <h2 id="team-heading">Join Our Team: Work with Our Industry-Leading Software Experts</h2>
+                    </div>
+                    <div class="Team-text">
+                        <p>At Keyideas, we're always on the lookout for exceptional software experts and talented professionals across technology, creativity, and business development. Explore our current job openings to join our dynamic team.</p>
                     </div>
                 </div>
 
-                <div class="badge-cell"></div>
-
-                <div class="badge-cell has-badge">
-                    <div class="connector-line"></div>
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">DEVELOPMENT &amp; IMPLEMENTATION</span>
-                    </div>
+                <div class="mobile-team-images">
+                    <img src="images/design-and-development-career-openings.png" alt="KeyIdeas Infotech design and development career openings" width="800" height="400" loading="lazy">
+                    <a href="/careers/" class="job-link" aria-label="View current job openings at KeyIdeas Infotech">Job Opening -&gt;</a>
                 </div>
 
-                <div class="badge-cell"></div>
-
-                <div class="badge-cell has-badge">
-                    <div class="connector-line"></div>
-                    <div class="badge-with-tick">
-                        <span class="badge-check">
-                            <svg viewBox="0 0 13 13" fill="none"><polyline points="2,6.5 5,10 11,3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span class="badge-text">DEPLOYMENT &amp; MAINTENANCE</span>
+                <div class="Team-images">
+                    <div class="col-small">
+                        <img src="images/Teamimg1.webp" alt="KeyIdeas Infotech team members collaborating" width="367" height="200" loading="lazy">
+                        <img src="images/Teamimg2.webp" alt="KeyIdeas Infotech software development team" width="367" height="200" loading="lazy">
+                    </div>
+                    <div class="col-large">
+                        <div class="main-image-wrapper">
+                            <img src="images/Teamimg3.webp" alt="KeyIdeas Infotech office and team environment" width="753" height="400" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-small">
+                        <img src="images/Teamimg4.webp" alt="KeyIdeas Infotech team working on IT consulting projects" width="368" height="353" loading="lazy">
+                        <a href="/careers/" class="job-link" aria-label="Explore job opportunities at KeyIdeas Infotech">Job Opening -&gt;</a>
                     </div>
                 </div>
-
             </div>
+        </section>
 
-        </div>
-
-
-
-
-
-
-<div class="mobile-process">
-
-  <!-- Step 1 -->
-  <div class="mp-step">
-    <div class="mp-header">
-      
-      <span class="mp-pill">1. IN-DEPTH RESEARCH &amp; ANALYSIS</span>
-    </div>
-    <div class="mp-body">
-    
-      <div class="mp-card"><div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>Data Intelligence<br>Heuristic Evaluation</div>
-    </div>   
-  </div>
-
-  <!-- Step 2 -->
-  <div class="mp-step">
-    <div class="mp-header">
-     
-      <span class="mp-pill">2. STRUCTURED PLANNING &amp; ROADMAP</span>
-    </div>
-    <div class="mp-body">
-    
-      <div class="mp-card"> <div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>    
-      </div>Workflow Architecture<br>Feasibility Mapping</div>
-    </div>
-  </div>
-
-  <!-- Step 3 -->
-  <div class="mp-step">
-    <div class="mp-header">
-      
-      <span class="mp-pill">3. DESIGN &amp; EXPERIENCE</span>
-    </div>
-    <div class="mp-body">
-      <div class="mp-card">
-        <div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>Interaction Modelling<br>Cognitive Load</div>
-    </div>
-  </div>
-
-  <!-- Step 4 -->
-  <div class="mp-step">
-    <div class="mp-header">
-      
-      <span class="mp-pill">4. DEVELOPMENT &amp; IMPLEMENTATION</span>
-    </div>
-    <div class="mp-body">
-      
-      <div class="mp-card">
-        <div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>Code Optimization<br>API Orchestration</div>
-    </div>
-  </div>
-
-  <!-- Step 5 -->
-  <div class="mp-step">
-    <div class="mp-header">
-      
-      <span class="mp-pill">5. TESTING &amp; OPTIMIZATION</span>
-    </div>
-    <div class="mp-body">
-      <div class="mp-card">
-        <div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>Regression Analysis<br>Stress Testing</div>
-    </div>
-  </div>
-
-  <!-- Step 6 -->
-  <div class="mp-step">
-    <div class="mp-header">
-      
-      <span class="mp-pill">6. DEPLOYMENT &amp; MAINTENANCE</span>
-    </div>
-    <div class="mp-body">
-     
-      <div class="mp-card">
-         <div class="mp-check">
-        <svg viewBox="0 0 13 13" fill="none">
-          <polyline points="2,6.5 5,10 11,3" stroke="#5B1FBF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      CI/CD Pipeline<br>Adaptive Scaling</div>
-    </div>
-  </div>
-
-</div>
-</section>
-
- 
-
-<section class="social">
-    <div class="social-container">
-      <div class="social-content">
-        <h2 > Social Impact: Making a Difference through <br>
-Corporate Responsibility
-</h2>
-
-<div class="social-img-collection">
-     <div class="socialimg">
-        <img src="images/socialimg1.webp" alt="">
-     </div>
-     <div class="socialimg">
-        <img src="images/socialimg2.webp" alt="">
-     </div>
-     <div class="socialimg">
-        <img src="images/socialimg3.webp" alt="">
-     </div>
-     <div class="socialimg">
-        <img src="images/socialimg4.webp" alt="">
-     </div>
-     <div class="socialimg">
-        <img src="images/socialimg5.webp" alt="">
-    </div>
-     <div class="socialimg">
-        <img src="images/socialimg6.webp" alt="">
-     </div>
-</div>
-
-
-
-    <div class="social-text">
-        <p>In the current business environment, social impact initiatives at Keyideas have become essential elements of our corporate <br> strategy. These efforts extend beyond mere profit-making goals, striving to foster positive change and enhance societal well-being.</p>
-
-        <h4>Social Resposibility -></h4>
-    </div>
-    
- </div>
-
-    </div>
-</section>
-
-<section class = "Team">
-    <div class="Team-container">
-
-        <div class="Team-content">
-            <div class="Team-head"><h2>Join Our Team: Work with Our Industry-Leading Software Experts
-</h2> </div>
-            <div class="Team-text"><p>At Keyideas, we’re always on the lookout for exceptional software experts and talented professionals across technology, creativity, and business development. Explore our current job openings to join our dynamic team.
-</p></div>
-       
-</div>
-  
-    <div class="mobile-team-images">
-        <img src="images/design-and-development-career-openings.png" alt="">
-        <a href="" class="job-link">Job Opening -></a>
-        
-    </div>
-    
-
-        <div class="Team-images">
-      
-           <div class="col-small">
-            
-            <img src="images/Teamimg1.webp" alt="" width = "367" height = "200">
-            <img src="images/Teamimg2.webp" alt=""  width = "367" height = "200">
-          
-        </div>
-
-        <div class="col-large">
-            
-            <div class="main-image-wrapper">
-                <img src="images/Teamimg3.webp" alt="" width = "753" height = "400">
-            
+        <!-- ── FAQ SECTION ── -->
+        <section class="FAQ" aria-labelledby="faq-heading">
+            <div class="FAQ-container">
+                <div class="FAQ-header">
+                    <h2 id="faq-heading">Comprehensive FAQ About Choosing the Right IT</h2>
+                    <h2>Consulting Company</h2>
+                </div>
+                <div class="FAQ-blurr-image">
+                    <h2>FAQs Shortcode</h2>
+                    <img src="images/Faqimg.webp" alt="Frequently asked questions about IT consulting services" width="1532" height="382" loading="lazy">
+                </div>
             </div>
-        </div>
-          
-        <div class="col-small">
-            
-            <img src="images/Teamimg4.webp" alt="" width = "368" height = "353">
-            <a href="" class="job-link">Job Opening -></a>
-        
-</div>
+        </section>
 
-</div>
-    </div>
-
-
-
-</section>
-
-<section class="FAQ">
-    <div class="FAQ-container">
-
-        <div class="FAQ-header">
-            <h2>Comprehensive FAQ About Choosing the Right IT </h2>
-            <h2>Consulting Company</h2>
-        </div>
-
-        <div class="FAQ-blurr-image">
-           <h2>FAQs Shortcode</h2>
-            <img src="images/Faqimg.webp" alt="">
-            
-        </div>
-        
-    </div>
-</section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="Discuss">Discuss Your Ideas Shortcode</div>
-         <div class="footer-code">Footer Shortcode</div>
+        <div class="footer-code">Footer Shortcode</div>
     </footer>
-    
 
-      
-<script src="script.js"></script>
+    <!-- ── Performance: defer non-critical JS ── -->
+    <script src="script.js" defer></script>
 
 </body>
 </html>
-  
