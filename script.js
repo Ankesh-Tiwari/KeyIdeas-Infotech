@@ -314,9 +314,6 @@
 })();
 
 
-
-
-
 (function () {
     'use strict';
 
@@ -417,7 +414,7 @@
 
                 label.textContent = 'Show less';
                 
-
+            
             } else {
 
                 // 1. Hide cards after Finance

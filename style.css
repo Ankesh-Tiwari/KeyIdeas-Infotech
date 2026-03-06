@@ -2519,9 +2519,6 @@ padding: 20px;
     }
 }
 
-
-
-
 @media (max-width: 768px) {
 
     /* ── Container ── */
@@ -2767,12 +2764,6 @@ align-items: stretch;
 
 
 
-
-
-
-
-
-
 @media (max-width: 768px) {
 
     .social-content {
@@ -2848,11 +2839,9 @@ align-items: stretch;
 
 
 
-/* ══════════════════════════════════════════════════════════
+/* 
    BANNER — MOBILE: ki-arena on top, text below
-   Paste at the very END of your style.css.
-   Desktop completely unchanged.
-══════════════════════════════════════════════════════════ */
+  */
 
 @media (max-width: 768px) {
 
